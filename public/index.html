@@ -109,7 +109,7 @@
     </header>
     <div class="entry">
       
-        <h3 id="附上缩减后的源配置文件-setting-xml-在-maven主目录-conf下"><a href="#附上缩减后的源配置文件-setting-xml-在-maven主目录-conf下" class="headerlink" title="附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下"></a>附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span>?&gt;</div><div class="line"></div><div class="line">&lt;settings xmlns=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></div><div class="line">          xmlns:xsi=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></div><div class="line">          xsi:schemaLocation=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0</span></div><div class="line">		  http://maven.apache.org/xsd/settings-1.0.0.xsd"&gt;</div><div class="line"></div><div class="line">	&lt;-- localRepository元素根据个人习惯设置本地仓库下载位置，默认为<span class="variable">$&#123;user.home&#125;</span>/.m2/repository --&gt;</div><div class="line">    &lt;localRepository&gt;D:\zlearn\IDEAdb\lib\lib-maven&lt;/localRepository&gt;</div><div class="line">    &lt;pluginGroups/&gt;</div><div class="line">    &lt;proxies/&gt;</div><div class="line">    &lt;servers/&gt;</div><div class="line">    &lt;mirrors&gt;</div><div class="line">        &lt;!--&lt;mirror&gt;</div><div class="line">          &lt;id&gt;mirrorId&lt;/id&gt;</div><div class="line">          &lt;mirrorOf&gt;repositoryId&lt;/mirrorOf&gt;</div><div class="line">          &lt;name&gt;Human Readable Name <span class="keyword">for</span> this Mirror.&lt;/name&gt;</div><div class="line">          &lt;url&gt;http://my.repository.com/repo/path&lt;/url&gt;</div><div class="line">        &lt;/mirror&gt;--&gt;</div><div class="line">		</div><div class="line">		&lt;-- mirror 元素设置镜像，这里设置为阿里镜像,在国内阿里镜像较快 --&gt;</div><div class="line">        &lt;mirror&gt;</div><div class="line">            &lt;id&gt;alimaven&lt;/id&gt;</div><div class="line">            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</div><div class="line">            &lt;name&gt;aliyun maven&lt;/name&gt;</div><div class="line">            &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</div><div class="line">        &lt;/mirror&gt;</div><div class="line">    &lt;/mirrors&gt;</div><div class="line">    &lt;profiles/&gt;</div><div class="line">&lt;/settings&gt;</div></pre></td></tr></table></figure>
+        <h3 id="附上缩减后的源配置文件-setting-xml-在-maven主目录-conf下"><a href="#附上缩减后的源配置文件-setting-xml-在-maven主目录-conf下" class="headerlink" title="附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下"></a>附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version=<span class="string">"1.0"</span> encoding=<span class="string">"UTF-8"</span>?&gt;</div><div class="line"></div><div class="line">&lt;settings xmlns=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></div><div class="line">          xmlns:xsi=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></div><div class="line">          xsi:schemaLocation=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0</span></div><div class="line">          http://maven.apache.org/xsd/settings-1.0.0.xsd"&gt;</div><div class="line"></div><div class="line">    &lt;!-- localRepository元素根据个人习惯设置本地仓库下载位置，默认为<span class="variable">$&#123;user.home&#125;</span>/.m2/repository --&gt;</div><div class="line">    &lt;localRepository&gt;D:\zlearn\IDEAdb\lib\lib-maven&lt;/localRepository&gt;</div><div class="line">    &lt;pluginGroups/&gt;</div><div class="line">    &lt;proxies/&gt;</div><div class="line">    &lt;servers/&gt;</div><div class="line">    &lt;mirrors&gt;</div><div class="line">        &lt;!--</div><div class="line">        &lt;mirror&gt;</div><div class="line">            &lt;id&gt;mirrorId&lt;/id&gt;</div><div class="line">            &lt;mirrorOf&gt;repositoryId&lt;/mirrorOf&gt;</div><div class="line">            &lt;name&gt;Human Readable Name <span class="keyword">for</span> this Mirror.&lt;/name&gt;</div><div class="line">            &lt;url&gt;http://my.repository.com/repo/path&lt;/url&gt;</div><div class="line">        &lt;/mirror&gt;</div><div class="line">        --&gt;</div><div class="line"></div><div class="line">        &lt;!-- mirror 元素设置镜像，这里设置为阿里镜像,在国内阿里镜像较快 --&gt;</div><div class="line">        &lt;mirror&gt;</div><div class="line">            &lt;id&gt;alimaven&lt;/id&gt;</div><div class="line">            &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;</div><div class="line">            &lt;name&gt;aliyun maven&lt;/name&gt;</div><div class="line">            &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;</div><div class="line">        &lt;/mirror&gt;</div><div class="line">    &lt;/mirrors&gt;</div><div class="line">    &lt;profiles/&gt;</div><div class="line">&lt;/settings&gt;</div></pre></td></tr></table></figure>
 
       
     </div>
@@ -509,7 +509,7 @@
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="search" name="q" results="0" placeholder="Search">
     <input type="hidden" name="q" value="site:yoursite.com">
   </form>
 </div>
@@ -518,7 +518,7 @@
 
   
 <div class="widget tag">
-  <h3 class="title">Neueste Artikel</h3>
+  <h3 class="title">Recent Posts</h3>
   <ul class="entry">
     
       <li>
@@ -580,13 +580,9 @@
   
     <li><a href="/tags/my-git/">my-git</a><small>1</small></li>
   
-    <li><a href="/tags/only-test/">only test</a><small>0</small></li>
-  
     <li><a href="/tags/picture/">picture</a><small>1</small></li>
   
     <li><a href="/tags/setting-xml/">setting.xml</a><small>1</small></li>
-  
-    <li><a href="/tags/test/">test</a><small>0</small></li>
   
     <li><a href="/tags/window10-update/">window10 update</a><small>1</small></li>
   
@@ -608,7 +604,7 @@
 
   
 <div class="widget tagcloud">
-  <h3 class="title">Tag-Cloud</h3>
+  <h3 class="title">Tag Cloud</h3>
   <div class="entry">
     <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/cpu信息/" style="font-size: 10px;">cpu信息</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/ico/" style="font-size: 10px;">ico</a> <a href="/tags/linux-cpuinfo/" style="font-size: 10px;">linux-cpuinfo</a> <a href="/tags/linux硬件配置/" style="font-size: 10px;">linux硬件配置</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/my-git/" style="font-size: 10px;">my-git</a> <a href="/tags/picture/" style="font-size: 10px;">picture</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/头像/" style="font-size: 10px;">头像</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/桌面小图标/" style="font-size: 10px;">桌面小图标</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
   </div>
@@ -620,7 +616,7 @@
   <footer id="footer" class="inner"><div class="alignleft">
   <p>
   
-  &copy; 2018 phoenix
+  &copy; 2019 phoenix
   
   All rights reserved.</p>
   <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
