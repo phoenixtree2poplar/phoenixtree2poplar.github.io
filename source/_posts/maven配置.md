@@ -5,7 +5,7 @@ tags:
 	- maven设置conf
 	- setting.xml
 ---
-### 附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下
+## 先附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下
 ```bash
 <?xml version="1.0" encoding="UTF-8"?>
 
@@ -15,10 +15,12 @@ tags:
           http://maven.apache.org/xsd/settings-1.0.0.xsd">
 
     <!-- localRepository元素根据个人习惯设置本地仓库下载位置，默认为${user.home}/.m2/repository -->
-    <localRepository>D:\zlearn\IDEAdb\lib\lib-maven</localRepository>
+    <localRepository>D:\maven-jar</localRepository>
+    
     <pluginGroups/>
     <proxies/>
     <servers/>
+    
     <mirrors>
         <!--
         <mirror>
@@ -37,6 +39,7 @@ tags:
             <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
         </mirror>
     </mirrors>
+    
     <profiles/>
 </settings>
 ```
