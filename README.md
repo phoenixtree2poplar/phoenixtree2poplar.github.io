@@ -7,3 +7,4 @@
 ### https://github.com/iluwatar/java-design-patterns  #java设计模式
 ### https://github.com/looly/hutool  #java工具类
 ### https://github.com/dyc87112/SpringBoot-Learning  #springboot基础教程
+### https://github.com/openresty/nginx-tutorials  #nginx教程
