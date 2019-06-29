@@ -9,3 +9,4 @@
 ### https://github.com/dyc87112/SpringBoot-Learning  #springboot基础教程
 ### https://github.com/openresty/nginx-tutorials  #nginx教程
 ### https://github.com/zhangkaitao/shiro-example  #shiro教程
+### https://blog.csdn.net/liu4532617/article/details/80802610  #java开发必装软件
