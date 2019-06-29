@@ -8,3 +8,4 @@
 ### https://github.com/looly/hutool  #java工具类
 ### https://github.com/dyc87112/SpringBoot-Learning  #springboot基础教程
 ### https://github.com/openresty/nginx-tutorials  #nginx教程
+### https://github.com/zhangkaitao/shiro-example  #shiro教程
