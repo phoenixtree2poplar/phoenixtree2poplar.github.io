@@ -19,5 +19,5 @@ tags:
 #### 3.系统变量→新建 CLASSPATH 变量，变量值填写   .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar(注意最前面有一点);
 #### 4.系统变量配置完毕,检验是否配置成功，运行cmd输入：
 ```bash
-java -version  # java 和 -version 之间有空格
+java -version  //java 和 -version 之间有空格
 ```

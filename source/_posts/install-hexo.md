@@ -30,7 +30,7 @@ hexo server  #也可以输入缩写 hexo s -g (gener + server)
 建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法然后建立关联
 现在我们需要_config.yml文件，来建立关联，可参考[官网](https://hexo.io/)说明 https://hexo.io/docs/deployment.html
 编辑  _config.yml 翻到最下面，改成我这样子的
-```bash
+```yaml
 deploy:
   type: git
   repo: <repository url>

@@ -6,7 +6,7 @@ tags:
 	- setting.xml
 ---
 ## 先附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下
-```bash
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
