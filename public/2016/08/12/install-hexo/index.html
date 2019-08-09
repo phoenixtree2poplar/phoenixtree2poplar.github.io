@@ -74,8 +74,8 @@
     </header>
     <div class="entry">
       
-        <h1 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h1><h3 id="安装Windows环境"><a href="#安装Windows环境" class="headerlink" title="安装Windows环境"></a>安装Windows环境</h3><h3 id="安装Git-https-www-git-scm-com"><a href="#安装Git-https-www-git-scm-com" class="headerlink" title="安装Git: https://www.git-scm.com/"></a>安装Git: <a href="https://www.git-scm.com/" target="_blank" rel="external">https://www.git-scm.com/</a></h3><h3 id="安装Node-js-https-nodejs-org-en"><a href="#安装Node-js-https-nodejs-org-en" class="headerlink" title="安装Node.js: https://nodejs.org/en/"></a>安装Node.js: <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></h3><h4 id="安装过程就不说了-一直Next就行了"><a href="#安装过程就不说了-一直Next就行了" class="headerlink" title="安装过程就不说了,一直Next就行了"></a>安装过程就不说了,一直Next就行了</h4><h2 id="1、进入Git-Bash"><a href="#1、进入Git-Bash" class="headerlink" title="1、进入Git Bash"></a>1、进入Git Bash</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo  <span class="comment">#注意：-g是指全局安装hexo</span></div></pre></td></tr></table></figure>
-<p>安装完成后，在你喜爱的文件夹下（如D:\Hexo），执行以下指令(在D:\Hexo内点击鼠标右键，选择Git Bash)<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo init  <span class="comment">#Hexo即会自动在目标文件夹建立网站所需要的所有文件</span></div><div class="line">npm install  <span class="comment">#安装依赖包</span></div><div class="line">hexo generate</div><div class="line">hexo server  <span class="comment">#也可以输入缩写 hexo s -g (gener + server)</span></div></pre></td></tr></table></figure></p>
+        <h1 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h1><h3 id="安装Windows环境"><a href="#安装Windows环境" class="headerlink" title="安装Windows环境"></a>安装Windows环境</h3><h3 id="安装Git-https-www-git-scm-com"><a href="#安装Git-https-www-git-scm-com" class="headerlink" title="安装Git: https://www.git-scm.com/"></a>安装Git: <a href="https://www.git-scm.com/" target="_blank" rel="external">https://www.git-scm.com/</a></h3><h3 id="安装Node-js-https-nodejs-org-en"><a href="#安装Node-js-https-nodejs-org-en" class="headerlink" title="安装Node.js: https://nodejs.org/en/"></a>安装Node.js: <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></h3><h4 id="安装过程就不说了-一直Next就行了"><a href="#安装过程就不说了-一直Next就行了" class="headerlink" title="安装过程就不说了,一直Next就行了"></a>安装过程就不说了,一直Next就行了</h4><h2 id="1、进入Git-Bash"><a href="#1、进入Git-Bash" class="headerlink" title="1、进入Git Bash"></a>1、进入Git Bash</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo  #注意：-g是指全局安装hexo</div></pre></td></tr></table></figure>
+<p>安装完成后，在你喜爱的文件夹下（如D:\Hexo），执行以下指令(在D:\Hexo内点击鼠标右键，选择Git Bash)<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo init  #Hexo即会自动在目标文件夹建立网站所需要的所有文件</div><div class="line">npm install  #安装依赖包</div><div class="line">hexo generate</div><div class="line">hexo server  #也可以输入缩写 hexo s -g (gener + server)</div></pre></td></tr></table></figure></p>
 <p>现在我们已经搭建起本地的hexo博客了，执行以下命令(在D:\Hexo)，然后到浏览器输入localhost:4000看看。</p>
 <h2 id="2、创建github账号并添加key-网上有教程就不进行说明了"><a href="#2、创建github账号并添加key-网上有教程就不进行说明了" class="headerlink" title="2、创建github账号并添加key(网上有教程就不进行说明了)"></a>2、创建github账号并添加key(网上有教程就不进行说明了)</h2><p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法然后建立关联<br>现在我们需要_config.yml文件，来建立关联，可参考<a href="https://hexo.io/" target="_blank" rel="external">官网</a>说明 <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a><br>编辑  _config.yml 翻到最下面，改成我这样子的<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">[branch]</span></div><div class="line"><span class="attr">  message:</span> <span class="string">[message]</span></div></pre></td></tr></table></figure></p>
 <p>安装hexo-deployer-git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save  <span class="comment">#支持git发布</span></div><div class="line">hexo d -g  <span class="comment">#发布你的 blog</span></div></pre></td></tr></table></figure></p>
@@ -133,6 +133,10 @@
   <ul class="entry">
     
       <li>
+        <a href="/2019/08/09/command/">command</a>
+      </li>
+    
+      <li>
         <a href="/2019/07/12/git-init/">git-init</a>
       </li>
     
@@ -146,10 +150,6 @@
     
       <li>
         <a href="/2018/10/19/test/">test</a>
-      </li>
-    
-      <li>
-        <a href="/2018/08/31/maven配置/">maven配置</a>
       </li>
     
   </ul>
@@ -169,13 +169,15 @@
   
     <li><a href="/tags/cisco-c3600/">cisco-c3600</a><small>1</small></li>
   
+    <li><a href="/tags/command/">command</a><small>1</small></li>
+  
     <li><a href="/tags/git-hexo/">git-hexo</a><small>1</small></li>
   
     <li><a href="/tags/github/">github</a><small>1</small></li>
   
     <li><a href="/tags/git初始化/">git初始化</a><small>1</small></li>
   
-    <li><a href="/tags/hexo/">hexo</a><small>1</small></li>
+    <li><a href="/tags/hexo/">hexo</a><small>2</small></li>
   
     <li><a href="/tags/hexo添加图片/">hexo添加图片</a><small>1</small></li>
   
@@ -183,9 +185,19 @@
   
     <li><a href="/tags/jdk环境变量配置/">jdk环境变量配置</a><small>1</small></li>
   
+    <li><a href="/tags/linux/">linux</a><small>1</small></li>
+  
     <li><a href="/tags/love-live/">love live</a><small>1</small></li>
   
+    <li><a href="/tags/maven/">maven</a><small>1</small></li>
+  
     <li><a href="/tags/maven设置conf/">maven设置conf</a><small>1</small></li>
+  
+    <li><a href="/tags/mvn/">mvn</a><small>1</small></li>
+  
+    <li><a href="/tags/mysql/">mysql</a><small>1</small></li>
+  
+    <li><a href="/tags/order/">order</a><small>1</small></li>
   
     <li><a href="/tags/pom/">pom</a><small>1</small></li>
   
@@ -197,11 +209,17 @@
   
     <li><a href="/tags/test/">test</a><small>1</small></li>
   
+    <li><a href="/tags/tomcat/">tomcat</a><small>1</small></li>
+  
     <li><a href="/tags/window10-update/">window10 update</a><small>1</small></li>
   
     <li><a href="/tags/window10禁止更新/">window10禁止更新</a><small>1</small></li>
   
+    <li><a href="/tags/windows/">windows</a><small>1</small></li>
+  
     <li><a href="/tags/双分支管理hexo/">双分支管理hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/命令/">命令</a><small>1</small></li>
   
     <li><a href="/tags/思科/">思科</a><small>1</small></li>
   
@@ -221,7 +239,7 @@
 <div class="widget tagcloud">
   <h3 class="title">Tag-Cloud</h3>
   <div class="entry">
-    <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/git初始化/" style="font-size: 10px;">git初始化</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/java环境变量配置/" style="font-size: 10px;">java环境变量配置</a> <a href="/tags/jdk环境变量配置/" style="font-size: 10px;">jdk环境变量配置</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/pom/" style="font-size: 10px;">pom</a> <a href="/tags/pom依赖/" style="font-size: 10px;">pom依赖</a> <a href="/tags/print-spooler/" style="font-size: 10px;">print spooler</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/我的依赖/" style="font-size: 10px;">我的依赖</a> <a href="/tags/打印机服务/" style="font-size: 10px;">打印机服务</a> <a href="/tags/测试用/" style="font-size: 10px;">测试用</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
+    <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/git初始化/" style="font-size: 10px;">git初始化</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/java环境变量配置/" style="font-size: 10px;">java环境变量配置</a> <a href="/tags/jdk环境变量配置/" style="font-size: 10px;">jdk环境变量配置</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/mvn/" style="font-size: 10px;">mvn</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/order/" style="font-size: 10px;">order</a> <a href="/tags/pom/" style="font-size: 10px;">pom</a> <a href="/tags/pom依赖/" style="font-size: 10px;">pom依赖</a> <a href="/tags/print-spooler/" style="font-size: 10px;">print spooler</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/命令/" style="font-size: 10px;">命令</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/我的依赖/" style="font-size: 10px;">我的依赖</a> <a href="/tags/打印机服务/" style="font-size: 10px;">打印机服务</a> <a href="/tags/测试用/" style="font-size: 10px;">测试用</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
   </div>
 </div>
 
