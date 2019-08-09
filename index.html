@@ -1,0 +1,685 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <title>Phoenixtree</title>
+  <meta name="author" content="phoenix" />
+
+  
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  
+  <meta property="og:site_name" content="Phoenixtree" />
+
+  
+  
+
+  
+    <meta property="og:image" content="undefined" />
+  
+
+  
+  <link href="/css/images/favicon.ico" rel="icon" />
+  
+
+  <link rel="alternate" href="/atom.xml" title="Phoenixtree" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">Phoenixtree</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2019-08-09T14:24:12.000Z"><a href="/2019/08/09/command/">2019-08-09</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2019/08/09/command/">command</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">git fetch --all   <span class="comment">#强制拉取</span></div><div class="line">git reset --hard origin/master  <span class="comment">#强制覆盖本地</span></div><div class="line">git checkout -b dev  <span class="comment">#从当前分支创建并切换分支到dev</span></div><div class="line">git push --<span class="built_in">set</span>-upstream origin dev  <span class="comment">#当前分支推送远程分支dev</span></div><div class="line">git push origin :dev  <span class="comment">#推送空分支到远程即删除远程分支，需当前不在该分支</span></div><div class="line">git rm -r --cached .  <span class="comment">#刷新文件缓存</span></div><div class="line"><span class="comment">#https://njuferret.github.io/2018/08/24/git-usage/  #git乱码</span></div><div class="line"><span class="comment">#https://github.com/phoenixtree2poplar/my-git/blob/master/git-workflow-tutorial.md  #git工作流</span></div></pre></td></tr></table></figure>
+<h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title="gitignore文件"></a>gitignore文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.idea/</div><div class="line">logs/</div><div class="line">target/</div></pre></td></tr></table></figure>
+<h2 id="Maven命令"><a href="#Maven命令" class="headerlink" title="Maven命令"></a>Maven命令</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">mvn archetype:create -DgroupId=packageName -DartifactId=projectName  #创建Maven的普通Java项目</div><div class="line">mvn archetype:generate -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp  #创建Maven的Web项目</div><div class="line">mvn compile  #编译源代码</div><div class="line">mvn test-compile  #编译测试代码</div><div class="line">mvn test  #运行测试</div><div class="line">mvn package  #打包</div><div class="line">mvn clean  #清除产生的项目</div><div class="line">mvn idea:idea  #生成idea项目</div><div class="line">mvn install  #在本地Repository中安装jar</div><div class="line">mvn -DskipTests clean package  #本地跳过测试打包</div></pre></td></tr></table></figure>
+<h2 id="free"><a href="#free" class="headerlink" title="free"></a>free</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">PURGE RECYCLEBIN  #清除回收BIN，gaussdb数据库命令</div><div class="line">call mvn -f pom.xml dependency:copy-dependencies  #根据pom.xml拉取仓库</div></pre></td></tr></table></figure>
+<h2 id="idea"><a href="#idea" class="headerlink" title="idea"></a>idea</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">Alt + Insert  #set/get; 构造方法;  toString; 重写方法。。。</div><div class="line">Ctrl+Alt+T  #将代码包在一个块中，例如try/catch  ;synchronized等</div><div class="line">Ctrl+E  #最近使用的文件</div><div class="line">Ctrl+Shift+E  #最近更改的文件</div><div class="line">Ctrl+P  #可以显示参数信息</div><div class="line">Ctrl + O  #查看我们继承的类或者接口中的方法，以及我们要实现的方法</div><div class="line">Ctrl + Alt + b  #查看接口实现类中方法</div><div class="line">Ctrl+Shift+F  #在路径中查找</div><div class="line">Ctrl+Shift+R  #在路径中替换</div><div class="line">Ctrl+Alt+O  #优化导入的类和包</div><div class="line">#idea修改配置  Font(字体) Mononspaced；Size 18；Line Spacing 0.8；</div></pre></td></tr></table></figure>
+<h2 id="Hexo-命令"><a href="#Hexo-命令" class="headerlink" title="Hexo 命令"></a>Hexo 命令</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo init [folder]  #Hexo 默认在目前的文件夹建立网站</div><div class="line">hexo n　　＃　　== hexo new "主题"  新建一篇文章，默认使用 _config.yml 中的 default_layout 参数代替</div><div class="line">hexo g  #　　== hexo generate  生产静态html</div><div class="line">hexo s  #　　== hexo server  #本地预览   localhost:<span class="number">4000</span></div><div class="line">hexo d  #　　== hexo deploy  #推送远程发布，即正式发布</div><div class="line">hexo s -g  #本地测试</div><div class="line">hexo d -g  #发布网页</div></pre></td></tr></table></figure>
+<h2 id="bat脚本"><a href="#bat脚本" class="headerlink" title="bat脚本"></a>bat脚本</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">@<span class="built_in">echo</span> off</div><div class="line"><span class="built_in">echo</span> "开始更新..  执行 git pull"</div><div class="line"><span class="built_in">cd</span> %~dp0</div><div class="line"><span class="built_in">set</span> currentFolder=%~dp0</div><div class="line"><span class="keyword">for</span> /D <span class="variable">%%i</span> <span class="keyword">in</span> (Folder*) <span class="keyword">do</span> ( </div><div class="line">  <span class="built_in">echo</span> <span class="variable">%%i</span></div><div class="line">  <span class="built_in">cd</span> <span class="variable">%%i</span></div><div class="line">  git pull</div><div class="line"><span class="comment">  rem git branch  字段rem是用来注释的 “:” 也可以用来注释</span></div><div class="line">  <span class="built_in">cd</span> ..</div><div class="line">)</div><div class="line"><span class="built_in">pause</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> <span class="number">1</span>==<span class="number">1</span> (</div><div class="line">  <span class="built_in">xcopy</span> /y *.jar <span class="variable">%currentFolder%</span>jar  #bat拷贝命令参数/y是覆盖</div><div class="line">  <span class="built_in">rd</span> /q/s package  #删除目录package /q不询问，静默模式 /s目录树迭代删除</div><div class="line">  <span class="built_in">md</span> package  #创建目录package</div><div class="line">  jar xf dev.jar  #静默解压dev.jar到当前目录</div><div class="line">  <span class="built_in">pause</span>  #暂停</div><div class="line">)</div></pre></td></tr></table></figure>
+<h2 id="Windows-命令"><a href="#Windows-命令" class="headerlink" title="Windows 命令"></a>Windows 命令</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">netstat -ano | <span class="built_in">findstr</span> ":<span class="number">80</span> "   #查询<span class="number">80</span>端口，记下最后一位数字，即PID</div><div class="line">tasklist /fi "PID eq <span class="number">4</span>"       #查询进程号为<span class="number">4</span>的服务名称</div><div class="line"><span class="built_in">taskkill</span> /pid <span class="number">4</span> /f   #根据pid 关闭进程，其中 /f 表示强制关闭该进程</div><div class="line"><span class="built_in">taskkill</span> /im nginx.exe   #根据服务名称关闭进程</div><div class="line">#详细参考https://blog.csdn.<span class="built_in">net</span>/wangmx1993328/article/details/<span class="number">80923829</span></div><div class="line"></div><div class="line">regedit   #打开注册表编辑器</div><div class="line">slmgr.vbs -dlv  #该命令命令可以查询到Win10的激活信息，包括：激活ID、安装ID、激活截止日期等信息     </div><div class="line">slmgr.vbs -dli  #命令可以查询到操作系统版本、部分产品密钥、许可证状态等</div><div class="line">slmgr.vbs -xpr  #命令可以查询Win10是否永久激活</div></pre></td></tr></table></figure>
+<h2 id="Mysql-命令"><a href="#Mysql-命令" class="headerlink" title="Mysql 命令"></a>Mysql 命令</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">desc table；  #显示表头</div><div class="line">select Host,User,plugin from user;  #用户名，登录方式，用户名，认证方式，</div><div class="line">ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'root';  #修改root认证方式mysql_native_password，密码为root</div><div class="line">FLUSH PRIVILEGES;  #刷新认证表</div><div class="line"><span class="built_in">set</span> password <span class="keyword">for</span> root@localhost = password('root');   #修改密码</div><div class="line">UPDATE user <span class="built_in">SET</span> Password=PASSWORD('newpassword') where USER='root';   #修改密码</div><div class="line">ALTER USER root@localhost identified WITH mysql_native_password BY 'root';  #修改密码</div></pre></td></tr></table></figure>
+<h2 id="Mysql5-7解压版cmd命令安装"><a href="#Mysql5-7解压版cmd命令安装" class="headerlink" title="Mysql5.7解压版cmd命令安装"></a>Mysql5.7解压版cmd命令安装</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">解压目录下新建  my.ini  文件，内容如下</div><div class="line">----------</div><div class="line">[mysqld]</div><div class="line">port= <span class="number">3306</span>                      #服务器端口</div><div class="line">basedir="D:/<span class="built_in">path</span>/mysql7"        #安装目录（因人而异）</div><div class="line">datadir="D:/<span class="built_in">path</span>/mysql7/data"   #数据保存位置（必须存在，不然报错）</div><div class="line">max_connections=<span class="number">200</span></div><div class="line">character-<span class="built_in">set</span>-server=utf8</div><div class="line">default-storage-engine=INNODB</div><div class="line">sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES</div><div class="line">[mysql]</div><div class="line">default-character-<span class="built_in">set</span>=utf8</div><div class="line">----------</div><div class="line">在解压目录bin下启动<span class="built_in">cmd</span>（管理员权限）</div><div class="line">mysqld --initialize-insecure  #初始化无密码数据库</div><div class="line">mysqld --install  sql7  #安装服务，服务名为 sql7（个人喜好）</div><div class="line"><span class="built_in">net</span> <span class="built_in">start</span> sql7           #开启数据库 提示成功，表示安装成功</div></pre></td></tr></table></figure>
+<h2 id="tomcat-直接部署应用到根目录"><a href="#tomcat-直接部署应用到根目录" class="headerlink" title="tomcat 直接部署应用到根目录"></a>tomcat 直接部署应用到根目录</h2><h3 id="方法一：（最简单直接的方法）"><a href="#方法一：（最简单直接的方法）" class="headerlink" title="方法一：（最简单直接的方法）"></a>方法一：（最简单直接的方法）</h3><h4 id="删除原-webapps-ROOT-目录下的所有文件，将应用下的所有文件和文件夹复制到ROOT文件夹下。"><a href="#删除原-webapps-ROOT-目录下的所有文件，将应用下的所有文件和文件夹复制到ROOT文件夹下。" class="headerlink" title="删除原 webapps/ROOT 目录下的所有文件，将应用下的所有文件和文件夹复制到ROOT文件夹下。"></a>删除原 webapps/ROOT 目录下的所有文件，将应用下的所有文件和文件夹复制到ROOT文件夹下。</h4><h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><h4 id="打开Tomcat-conf-server-xml，在之间加入代码："><a href="#打开Tomcat-conf-server-xml，在之间加入代码：" class="headerlink" title="打开Tomcat/conf/server.xml，在之间加入代码："></a>打开Tomcat/conf/server.xml，在<host></host>之间加入代码：</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">path</span>=<span class="string">""</span> <span class="attr">docBase</span>=<span class="string">"D:/path/apache-tomcat-8.5.35/webapps/bbs.war"</span>/&gt;</span></div></pre></td></tr></table></figure>
+<h4 id="这样重新启动tomcat，我们的bbs-war应用就直接部署到ROOT目录了。"><a href="#这样重新启动tomcat，我们的bbs-war应用就直接部署到ROOT目录了。" class="headerlink" title="这样重新启动tomcat，我们的bbs.war应用就直接部署到ROOT目录了。"></a>这样重新启动tomcat，我们的bbs.war应用就直接部署到ROOT目录了。</h4><h3 id="tomcat-增加jvm运行内存"><a href="#tomcat-增加jvm运行内存" class="headerlink" title="tomcat 增加jvm运行内存"></a>tomcat 增加jvm运行内存</h3><h4 id="linux系统修改TOMCAT-HOME-bin-catalina-sh"><a href="#linux系统修改TOMCAT-HOME-bin-catalina-sh" class="headerlink" title="linux系统修改TOMCAT_HOME/bin/catalina.sh"></a>linux系统修改TOMCAT_HOME/bin/catalina.sh</h4><h4 id="win系统修改TOMCAT-HOME-bin-catalina-bat"><a href="#win系统修改TOMCAT-HOME-bin-catalina-bat" class="headerlink" title="win系统修改TOMCAT_HOME/bin/catalina.bat"></a>win系统修改TOMCAT_HOME/bin/catalina.bat</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">JAVA_OPTS=&quot;-server -Xms1024m -Xmx2048m -XX:PermSize=156M -XX:MaxPermSize=512m&quot;</div><div class="line">配置文件前面添加上面一行就行，下面为参数解释</div><div class="line">-server:一定要作为第一个参数，在多个CPU时性能佳 </div><div class="line">-Xms：java Heap初始大小， 默认是物理内存的1/64。</div><div class="line">-Xmx：java heap最大值，建议均设为物理内存的一半。不可超过物理内存。 </div><div class="line">-XX:PermSize:设定内存的永久保存区初始大小，缺省值为64M。</div><div class="line">-XX:MaxPermSize:设定内存的永久保存区最大 大小，缺省值为64M。</div><div class="line">-XX:SurvivorRatio=2  :生还者池的大小,默认是2，如果垃圾回收变成了瓶颈，您可以尝试定制生成池设置</div><div class="line">-XX:NewSize: 新生成的池的初始大小，省值为2M。</div><div class="line">-XX:MaxNewSize: 新生成的池的最大大小，缺省值为32M。</div></pre></td></tr></table></figure>
+<h2 id="Linux服务器硬件信息"><a href="#Linux服务器硬件信息" class="headerlink" title="Linux服务器硬件信息"></a>Linux服务器硬件信息</h2><p>```bash<br>cat /proc/cpuinfo  | grep name | cut -f2 -d: | uniq  #查看cpu名称<br>cat /proc/cpuinfo| grep “physical id”| sort| uniq| wc -l  #查看物理CPU个数<br>cat /proc/cpuinfo| grep “cpu cores”| uniq  #查看每个物理CPU中core的个数(即核数)<br>cat /proc/cpuinfo| grep “processor”| wc -l  #查看逻辑CPU的个<br>free -m  #数查看内存 </p>
+<p>#总核数 = 物理CPU个数 X 每颗物理CPU的核数 </p>
+<p>#总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数</p>
+
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/命令/">命令</a>, <a href="/tags/windows/">windows</a>, <a href="/tags/mysql/">mysql</a>, <a href="/tags/hexo/">hexo</a>, <a href="/tags/linux/">linux</a>, <a href="/tags/tomcat/">tomcat</a>, <a href="/tags/maven/">maven</a>, <a href="/tags/mvn/">mvn</a>, <a href="/tags/command/">command</a>, <a href="/tags/order/">order</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2019-07-12T13:49:14.000Z"><a href="/2019/07/12/git-init/">2019-07-12</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2019/07/12/git-init/">git-init</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h1 id="gitgub初始化"><a href="#gitgub初始化" class="headerlink" title="gitgub初始化"></a>gitgub初始化</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> /d				<span class="comment">#切换到d盘</span></div><div class="line">mkdir git			<span class="comment">#建立git目录</span></div><div class="line"><span class="built_in">cd</span>  git				<span class="comment">#进入git目录</span></div><div class="line">git init			<span class="comment">#初始化仓库</span></div><div class="line">git config --global user.name <span class="string">"phoenixtree"</span>                               <span class="comment">#设置用户名                       </span></div><div class="line">git config --global user.email <span class="string">"wu_ton-g@foxmail.com"</span>                   <span class="comment">#设置用户邮箱</span></div><div class="line">git remote add origin git@github.com:phoenixtree2poplar/only-test.git   <span class="comment">#关联远程仓库</span></div><div class="line"><span class="comment">#git remote add origin                                                #远程库地址链接关联远程仓库</span></div><div class="line"></div><div class="line"><span class="comment">#########第一次SSH认证时候用##############</span></div><div class="line">rm -fr ~/.ssh                           <span class="comment">#删除本地密码对</span></div><div class="line">ssh-keygen -t rsa  -C <span class="string">"heyabin@test"</span>    <span class="comment">#生成密码对</span></div><div class="line">cp ~/.ssh/id_rsa.pub .                  <span class="comment">#拷贝密码锁到  git目录</span></div><div class="line"></div><div class="line"><span class="comment">############网页操作--将密码锁添加到远程github账号##############</span></div><div class="line">git add *           <span class="comment">#添加文件到缓存区域</span></div><div class="line">git commit          <span class="comment">#提交文件到本地库</span></div><div class="line">git tag  v.x.x      <span class="comment">#打标签 </span></div><div class="line">git push            <span class="comment">#最后一步推送代码到远程仓库</span></div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/git初始化/">git初始化</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2019-07-12T13:38:02.000Z"><a href="/2019/07/12/My-pom-xml/">2019-07-12</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2019/07/12/My-pom-xml/">My-pom.xml</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h1 id="phoenixtree-parent的pom-xml"><a href="#phoenixtree-parent的pom-xml" class="headerlink" title="phoenixtree-parent的pom.xml"></a>phoenixtree-parent的pom.xml</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></div><div class="line">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</div><div class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.phoenixtree<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>phoenixtree-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">properties</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">maven.compiler.source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.source</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">maven.compiler.target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">maven.compiler.target</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">project.build.sourceEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.build.sourceEncoding</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">project.reporting.outputEncoding</span>&gt;</span>UTF-8<span class="tag">&lt;/<span class="name">project.reporting.outputEncoding</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">properties</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">dependencyManagement</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-dependencies<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.4.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">type</span>&gt;</span>pom<span class="tag">&lt;/<span class="name">type</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">scope</span>&gt;</span>import<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">dependencyManagement</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">build</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.7.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>utf-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">source</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">target</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">build</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></div></pre></td></tr></table></figure>
+<h1 id="phoenixtree-poplar的pom-xml"><a href="#phoenixtree-poplar的pom-xml" class="headerlink" title="phoenixtree-poplar的pom.xml"></a>phoenixtree-poplar的pom.xml</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span></span></div><div class="line">         <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></div><div class="line">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</div><div class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.phoenixtree<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>phoenixtree-poplar<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">packaging</span>&gt;</span>jar<span class="tag">&lt;/<span class="name">packaging</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.phoenixtree<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>phoenixtree-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.0-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-test<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alibaba<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>fastjson<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.2.44<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>commons-configuration<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>commons-configuration<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-context<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>5.0.8.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.jooq<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>jooq<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.9.3<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>javax.servlet<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>javax.servlet-api<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">build</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.maven.plugins<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>maven-compiler-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.7.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">                <span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">encoding</span>&gt;</span>utf-8<span class="tag">&lt;/<span class="name">encoding</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">source</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">source</span>&gt;</span></div><div class="line">                    <span class="tag">&lt;<span class="name">target</span>&gt;</span>1.8<span class="tag">&lt;/<span class="name">target</span>&gt;</span></div><div class="line">                <span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div><div class="line">            <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">build</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/pom/">pom</a>, <a href="/tags/pom依赖/">pom依赖</a>, <a href="/tags/我的依赖/">我的依赖</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2019-03-07T04:55:58.000Z"><a href="/2019/03/07/Java环境变量配置/">2019-03-07</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2019/03/07/Java环境变量配置/">Java环境变量配置</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="安装java环境，选择安装目录，安装过程中会出现两次安装提示。"><a href="#安装java环境，选择安装目录，安装过程中会出现两次安装提示。" class="headerlink" title="安装java环境，选择安装目录，安装过程中会出现两次安装提示。"></a>安装java环境，选择安装目录，安装过程中会出现两次安装提示。</h2><h3 id="第一次是安装jdk，第二次是安装jre-。"><a href="#第一次是安装jdk，第二次是安装jre-。" class="headerlink" title="第一次是安装jdk，第二次是安装jre 。"></a>第一次是安装jdk，第二次是安装jre 。</h3><h3 id="建议两个都安装在同一个文件夹中的不同文件夹中。（不能都安装在java文件夹的根目录下，jdk和jre安装在同一文件夹会出错"><a href="#建议两个都安装在同一个文件夹中的不同文件夹中。（不能都安装在java文件夹的根目录下，jdk和jre安装在同一文件夹会出错" class="headerlink" title="建议两个都安装在同一个文件夹中的不同文件夹中。（不能都安装在java文件夹的根目录下，jdk和jre安装在同一文件夹会出错"></a>建议两个都安装在同一个文件夹中的不同文件夹中。（不能都安装在java文件夹的根目录下，jdk和jre安装在同一文件夹会出错</h3><h4 id="1-安装jdk-根据个人喜好选择安装目录"><a href="#1-安装jdk-根据个人喜好选择安装目录" class="headerlink" title="1.安装jdk 根据个人喜好选择安装目录"></a>1.安装jdk 根据个人喜好选择安装目录</h4><h4 id="2-安装jre-根据个人喜好选择安装目录"><a href="#2-安装jre-根据个人喜好选择安装目录" class="headerlink" title="2.安装jre 根据个人喜好选择安装目录"></a>2.安装jre 根据个人喜好选择安装目录</h4><h6 id="注：若无安装目录要求，可全默认设置。无需做任何修改，两次均直接点下一步。"><a href="#注：若无安装目录要求，可全默认设置。无需做任何修改，两次均直接点下一步。" class="headerlink" title="注：若无安装目录要求，可全默认设置。无需做任何修改，两次均直接点下一步。"></a>注：若无安装目录要求，可全默认设置。无需做任何修改，两次均直接点下一步。</h6><h2 id="安装完JDK后配置环境变量-计算机→属性→高级系统设置→高级→环境变量"><a href="#安装完JDK后配置环境变量-计算机→属性→高级系统设置→高级→环境变量" class="headerlink" title="安装完JDK后配置环境变量  计算机→属性→高级系统设置→高级→环境变量"></a>安装完JDK后配置环境变量  计算机→属性→高级系统设置→高级→环境变量</h2><h4 id="1-系统变量→新建JAVA-HOME变量，变量值填写jdk的安装目录（本人是-D-Java-jdk1-7"><a href="#1-系统变量→新建JAVA-HOME变量，变量值填写jdk的安装目录（本人是-D-Java-jdk1-7" class="headerlink" title="1.系统变量→新建JAVA_HOME变量，变量值填写jdk的安装目录（本人是 D:\Java\jdk1.7);"></a>1.系统变量→新建JAVA_HOME变量，变量值填写jdk的安装目录（本人是 D:\Java\jdk1.7);</h4><h4 id="2-系统变量→寻找-Path-变量→编辑，在变量值最后输入-JAVA-HOME-bin-JAVA-HOME-jre-bin"><a href="#2-系统变量→寻找-Path-变量→编辑，在变量值最后输入-JAVA-HOME-bin-JAVA-HOME-jre-bin" class="headerlink" title="2.系统变量→寻找 Path 变量→编辑，在变量值最后输入 %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;"></a>2.系统变量→寻找 Path 变量→编辑，在变量值最后输入 %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;</h4><h4 id="注意原来Path的变量值末尾有没有-号，如果没有，先输入；号再输入上面的代码"><a href="#注意原来Path的变量值末尾有没有-号，如果没有，先输入；号再输入上面的代码" class="headerlink" title="(注意原来Path的变量值末尾有没有;号，如果没有，先输入；号再输入上面的代码)"></a>(注意原来Path的变量值末尾有没有;号，如果没有，先输入；号再输入上面的代码)</h4><h4 id="3-系统变量→新建-CLASSPATH-变量，变量值填写-JAVA-HOME-lib-JAVA-HOME-lib-tools-jar-注意最前面有一点"><a href="#3-系统变量→新建-CLASSPATH-变量，变量值填写-JAVA-HOME-lib-JAVA-HOME-lib-tools-jar-注意最前面有一点" class="headerlink" title="3.系统变量→新建 CLASSPATH 变量，变量值填写   .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar(注意最前面有一点);"></a>3.系统变量→新建 CLASSPATH 变量，变量值填写   .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar(注意最前面有一点);</h4><h4 id="4-系统变量配置完毕-检验是否配置成功，运行cmd输入："><a href="#4-系统变量配置完毕-检验是否配置成功，运行cmd输入：" class="headerlink" title="4.系统变量配置完毕,检验是否配置成功，运行cmd输入："></a>4.系统变量配置完毕,检验是否配置成功，运行cmd输入：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">java -version  //java 和 -version 之间有空格</div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/java环境变量配置/">java环境变量配置</a>, <a href="/tags/jdk环境变量配置/">jdk环境变量配置</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2018-10-19T03:08:24.000Z"><a href="/2018/10/19/test/">2018-10-19</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2018/10/19/test/">test</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h1 id="only-test"><a href="#only-test" class="headerlink" title="only test"></a>only test</h1><h1 id="仅做测试用"><a href="#仅做测试用" class="headerlink" title="仅做测试用"></a>仅做测试用</h1>
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/test/">test</a>, <a href="/tags/测试用/">测试用</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2018-08-31T02:53:29.000Z"><a href="/2018/08/31/maven配置/">2018-08-31</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2018/08/31/maven配置/">maven配置</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="先附上缩减后的源配置文件-setting-xml-在-maven主目录-conf下"><a href="#先附上缩减后的源配置文件-setting-xml-在-maven主目录-conf下" class="headerlink" title="先附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下"></a>先附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></span></div><div class="line">          <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></div><div class="line">          <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0</span></div><div class="line">          http://maven.apache.org/xsd/settings-1.0.0.xsd"&gt;</div><div class="line">    <span class="comment">&lt;!-- localRepository元素根据个人习惯设置本地仓库下载位置，默认为$&#123;user.home&#125;/.m2/repository --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>D:\mavenjar<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- mirror 元素设置镜像，这里设置为阿里镜像,在国内阿里镜像较快 --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/maven设置conf/">maven设置conf</a>, <a href="/tags/setting-xml/">setting.xml</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2017-06-01T06:23:12.000Z"><a href="/2017/06/01/cisco-c3600/">2017-06-01</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2017/06/01/cisco-c3600/">cisco-c3600</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div></pre></td><td class="code"><pre><div class="line">en                     <span class="comment">#enable  进入特权模式</span></div><div class="line">disa                   <span class="comment">#disable  退出特权模式，进入用户模式</span></div><div class="line">conf t                 <span class="comment">#configure terminal  进入全局配置模式</span></div><div class="line">tab                    <span class="comment">#可补全命令</span></div><div class="line">？                     <span class="comment">#可显示开头命令</span></div><div class="line"></div><div class="line">int f0/0               <span class="comment">#interface f0/0  进入指定接口配置</span></div><div class="line">ip add 192.168.1.1 255.255.255.0 <span class="comment">#ip address 在接口配置下为该接口添加IP</span></div><div class="line">ip add dhcp            <span class="comment">#接口配置下设置该接口为dhcp模式</span></div><div class="line">no sh                  <span class="comment">#no shutdown  在接口配置下打开该接口</span></div><div class="line">ip route 21.21.21.21 255.255.255.255 33.33.33.33  <span class="comment">#21是指定IP，255是匹配精确度，33下一跳或者接口</span></div><div class="line">ip route 0.0.0.0 0.0.0.0 21.21.21.21              <span class="comment">#21.21.21.21 为默认路由</span></div><div class="line">ip route 1.1.1.1 0.0.0.0 2.2.2.2 50               <span class="comment">#50 是管理距离，越大越不优先，最大255</span></div><div class="line">ip route 1.1.1.0 255.255.255.0 null 0             <span class="comment">#垃圾桶路由</span></div><div class="line">ipv6 <span class="built_in">enable</span>            <span class="comment">#在接口配置下开启ipv6支持，自带链路本地地址 互联</span></div><div class="line"></div><div class="line">router os 2            <span class="comment">#router ospf 2  开启ospf 线程为2</span></div><div class="line">router-id  2.2.2.2     <span class="comment">#设置 路由id 默认优先为回环口地址 其次最大接口地址</span></div><div class="line">net 0.0.0.0 0.0.0.0 a 0<span class="comment">#network 0.0.0.0 0.0.0.0 area 0  所有网路划入 主网域</span></div><div class="line">ip os 2 a 0            <span class="comment">#ip ospf 2 area 0 接口配置下可将该接口划入指定网域</span></div><div class="line">ip os net point-to-point <span class="comment">#ip ospf network point-to-point  优化ospf为点对点网络</span></div><div class="line">cle ip os pro          <span class="comment">#clear ip ospf process  清除ospf进程</span></div><div class="line"></div><div class="line">no ip routing          <span class="comment">#清空并关闭路由</span></div><div class="line">ip routing             <span class="comment">#开启路由  与之上一起可重置路由表</span></div><div class="line"></div><div class="line">sh run                 <span class="comment">#show running-config 查看运行配置   后加 “ | s  ** ”  可匹配指定项</span></div><div class="line">sh ip ro               <span class="comment">#show ip route  显示路由表</span></div><div class="line">sh ip int b            <span class="comment">#show ip interface  brief  显示接口信息</span></div><div class="line">sh ip os da            <span class="comment">#show ip ospf database  显示ospf 数据库</span></div><div class="line">sh ip os da ro         <span class="comment">#show ip ospf database route 显示ospf路由表</span></div><div class="line">sh ip os n             <span class="comment">#show ip ospf neighbor 显示ospf邻居关系</span></div><div class="line">sh line                <span class="comment">#显示连接</span></div><div class="line">clear line number      <span class="comment">#关闭指定连接</span></div><div class="line"></div><div class="line"><span class="built_in">enable</span> password        <span class="comment">#修改特权密码</span></div><div class="line"><span class="built_in">enable</span> secret          <span class="comment">#加密密码</span></div><div class="line"><span class="built_in">enable</span> use-tacacs      <span class="comment">#用tacacs服务器匹配密码</span></div><div class="line"></div><div class="line">line vty 0 4           <span class="comment">#开启远程控制 </span></div><div class="line">no login               <span class="comment">#不用登录</span></div><div class="line">login                  <span class="comment">#登录</span></div><div class="line">password               <span class="comment">#登录密码</span></div><div class="line">privilege level 15     <span class="comment">#权限15即特权模式</span></div><div class="line">username ccna privilege 15 password ciso <span class="comment">#用户名 ccna 登录等级 15特权  密码 ciso</span></div></pre></td></tr></table></figure>
+<img src="/2017/06/01/cisco-c3600/TCP-IP.jpg" alt="TCP-IP.jpg" title="">
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/路由器/">路由器</a>, <a href="/tags/cisco-c3600/">cisco-c3600</a>, <a href="/tags/思科/">思科</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2017-05-23T00:38:16.000Z"><a href="/2017/05/23/window10-uninstall-update/">2017-05-23</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2017/05/23/window10-uninstall-update/">window10 uninstall update</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="Win10系统关闭自动更新方法如下"><a href="#Win10系统关闭自动更新方法如下" class="headerlink" title="Win10系统关闭自动更新方法如下"></a>Win10系统关闭自动更新方法如下</h2><p>1.按Win键+R键调出运行，输入“gpedit.msc”点击“确定”，调出“本地组策略编辑器”。<br>2.顺序依次展开”计算机配置”，”管理模板” ，”windows组件” ，”windows更新 “。<br>3.在右面找到“配置自动更新”，并双击,在配置窗口上的顺序选择“已禁用”，点击“应用”，“确定”。<br>4.最后重启。</p>
+<h2 id="Windows查询激活时间"><a href="#Windows查询激活时间" class="headerlink" title="Windows查询激活时间"></a>Windows查询激活时间</h2><p>使用 Windows + R组合快捷键打开运行命令框<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">slmgr.vbs -dlv  <span class="comment">#该命令命令可以查询到Win10的激活信息，包括：激活ID、安装ID、激活截止日期等信息     </span></div><div class="line">slmgr.vbs -dli  <span class="comment">#命令可以查询到操作系统版本、部分产品密钥、许可证状态等</span></div><div class="line">slmgr.vbs -xpr  <span class="comment">#命令可以查询Win10是否永久激活</span></div></pre></td></tr></table></figure></p>
+<h2 id="print-spooler启动失败（win10-打印机服务）"><a href="#print-spooler启动失败（win10-打印机服务）" class="headerlink" title="print spooler启动失败（win10 打印机服务）"></a>print spooler启动失败（win10 打印机服务）</h2><p>在启动print spooler服务时，报启动错误1068依赖服务或组无法启动，找依赖服务等等用了各种方式，还是不好！<br>在开始—-》运行  中输入以下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sc config spooler depend= rpcss  <span class="comment">#要以管理员身份运行，看了下资料说这个命令是恢复系统默认的依赖关系</span></div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/window10禁止更新/">window10禁止更新</a>, <a href="/tags/window10-update/">window10 update</a>, <a href="/tags/打印机服务/">打印机服务</a>, <a href="/tags/print-spooler/">print spooler</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2017-05-05T02:27:52.000Z"><a href="/2017/05/05/彻底删除-onedirve/">2017-05-05</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2017/05/05/彻底删除-onedirve/">Remove OneDrive</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="关于禁止onedrive自启动简单的就是在任务管理器的启动中禁用onedrive的启动项目就可以。"><a href="#关于禁止onedrive自启动简单的就是在任务管理器的启动中禁用onedrive的启动项目就可以。" class="headerlink" title="关于禁止onedrive自启动简单的就是在任务管理器的启动中禁用onedrive的启动项目就可以。"></a>关于禁止onedrive自启动简单的就是在任务管理器的启动中禁用onedrive的启动项目就可以。</h2><h2 id="关于组策略管理"><a href="#关于组策略管理" class="headerlink" title="关于组策略管理"></a>关于组策略管理</h2><p>运行gpedit.msc，进入【计算机配置】-【管理模板】-【windows组件】-【onedrive】，右侧的三个选项：<br>默认情况下，将文档保存到 OneDrive，选择禁用；<br>禁止使用 OneDrive 进行文件存储，选择启用<br>禁止OneDrive 文件通过按流量的连接同步，选择启用。<br>如果是准备彻底删除onedrive，组策略的这三项其实是不用理会的，因为onedrive都没有了，这个策略设置就毫无意义。这个策略可能适用于同步行为的设置。</p>
+<h2 id="关于删除onedrive的程序卸载"><a href="#关于删除onedrive的程序卸载" class="headerlink" title="关于删除onedrive的程序卸载"></a>关于删除onedrive的程序卸载</h2><h3 id="卸载方法：运行输入"><a href="#卸载方法：运行输入" class="headerlink" title="卸载方法：运行输入"></a>卸载方法：运行输入</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">%localappdata%\Microsoft\OneDrive\  #查看版本号，一般是一串数值的形式。</div><div class="line">%localappdata%\Microsoft\OneDrive\XXXXXXXXXXXXXXX(刚才查看到的那个版本号)\OneDriveSetup /uninstall  #这个命令可以卸载掉大多的onedrive程序，剩余的可以自行删除（可能须要权限设置或者以管理员模式运行cmd）</div></pre></td></tr></table></figure>
+<h2 id="关于删除导航栏中的onedrive"><a href="#关于删除导航栏中的onedrive" class="headerlink" title="关于删除导航栏中的onedrive"></a>关于删除导航栏中的onedrive</h2><p>卸载onedrive是不能清除导航栏里面的onedrive，进入注册表：<br>HKEY_CLASSES_ROOT\CLSID{018D5C66-4533-4307-9B53-224DE2ED1FE6}\ShellFolder<br>把右侧的Attributes属性的值 f080004d修改为f090004d。<br>重启资源管理器后生效</p>
+<h2 id="彻底把onedrive完全砍掉了-运行输入"><a href="#彻底把onedrive完全砍掉了-运行输入" class="headerlink" title="彻底把onedrive完全砍掉了,运行输入"></a>彻底把onedrive完全砍掉了,运行输入</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">%localappdata%\Microsoft \onedrive  <span class="comment">#最后记得重启</span></div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/Remove-OneDrive/">Remove-OneDrive</a>, <a href="/tags/OneDrive/">OneDrive</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2016-08-12T09:06:56.000Z"><a href="/2016/08/12/install-hexo/">2016-08-12</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2016/08/12/install-hexo/">install-hexo</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h1 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h1><h3 id="安装Windows环境"><a href="#安装Windows环境" class="headerlink" title="安装Windows环境"></a>安装Windows环境</h3><h3 id="安装Git-https-www-git-scm-com"><a href="#安装Git-https-www-git-scm-com" class="headerlink" title="安装Git: https://www.git-scm.com/"></a>安装Git: <a href="https://www.git-scm.com/" target="_blank" rel="external">https://www.git-scm.com/</a></h3><h3 id="安装Node-js-https-nodejs-org-en"><a href="#安装Node-js-https-nodejs-org-en" class="headerlink" title="安装Node.js: https://nodejs.org/en/"></a>安装Node.js: <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></h3><h4 id="安装过程就不说了-一直Next就行了"><a href="#安装过程就不说了-一直Next就行了" class="headerlink" title="安装过程就不说了,一直Next就行了"></a>安装过程就不说了,一直Next就行了</h4><h2 id="1、进入Git-Bash"><a href="#1、进入Git-Bash" class="headerlink" title="1、进入Git Bash"></a>1、进入Git Bash</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo  #注意：-g是指全局安装hexo</div></pre></td></tr></table></figure>
+<p>安装完成后，在你喜爱的文件夹下（如D:\Hexo），执行以下指令(在D:\Hexo内点击鼠标右键，选择Git Bash)<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo init  #Hexo即会自动在目标文件夹建立网站所需要的所有文件</div><div class="line">npm install  #安装依赖包</div><div class="line">hexo generate</div><div class="line">hexo server  #也可以输入缩写 hexo s -g (gener + server)</div></pre></td></tr></table></figure></p>
+<p>现在我们已经搭建起本地的hexo博客了，执行以下命令(在D:\Hexo)，然后到浏览器输入localhost:4000看看。</p>
+<h2 id="2、创建github账号并添加key-网上有教程就不进行说明了"><a href="#2、创建github账号并添加key-网上有教程就不进行说明了" class="headerlink" title="2、创建github账号并添加key(网上有教程就不进行说明了)"></a>2、创建github账号并添加key(网上有教程就不进行说明了)</h2><p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法然后建立关联<br>现在我们需要_config.yml文件，来建立关联，可参考<a href="https://hexo.io/" target="_blank" rel="external">官网</a>说明 <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a><br>编辑  _config.yml 翻到最下面，改成我这样子的<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">[branch]</span></div><div class="line"><span class="attr">  message:</span> <span class="string">[message]</span></div></pre></td></tr></table></figure></p>
+<p>安装hexo-deployer-git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save  <span class="comment">#支持git发布</span></div><div class="line">hexo d -g  <span class="comment">#发布你的 blog</span></div></pre></td></tr></table></figure></p>
+<p>你的博客就搭建成功了  网址为your_user_name.github.io</p>
+<h2 id="3、国内直接使用-npm-的官方镜像是非常慢的，这里推荐使用淘宝-NPM-镜像。"><a href="#3、国内直接使用-npm-的官方镜像是非常慢的，这里推荐使用淘宝-NPM-镜像。" class="headerlink" title="3、国内直接使用 npm 的官方镜像是非常慢的，这里推荐使用淘宝 NPM 镜像。"></a>3、国内直接使用 npm 的官方镜像是非常慢的，这里推荐使用淘宝 NPM 镜像。</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org <span class="comment">#这样就可以使用 cnpm 命令来安装模块了</span></div><div class="line">cnpm install [name]</div></pre></td></tr></table></figure>
+<h2 id="4、新版特性-支持缩写"><a href="#4、新版特性-支持缩写" class="headerlink" title="4、新版特性  支持缩写"></a>4、新版特性  支持缩写</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">hexo g == hexo generate <span class="comment">#生产静态html</span></div><div class="line">hexo s == hexo server  <span class="comment">#本地预览   localhost:4000</span></div><div class="line">hexo d == hexo deploy  <span class="comment">#推送远程发布，即正式发布</span></div><div class="line">hexo n == hexo new</div><div class="line">hexo s -g  <span class="comment">#本地测试</span></div><div class="line">hexo d -g  <span class="comment">#git发布</span></div></pre></td></tr></table></figure>
+<h1 id="双分支管理git"><a href="#双分支管理git" class="headerlink" title="双分支管理git"></a>双分支管理git</h1><h2 id="1、创建双分支"><a href="#1、创建双分支" class="headerlink" title="1、创建双分支"></a>1、创建双分支</h2><p>1.创建仓库;<br>2.创建两个分支：master 与 hexo<br>3.设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）<br>4.使用git clone 拷贝仓库<br>5.在本地github.io文件夹下通过Git bash依次执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm install hexo</div><div class="line">hexo init</div><div class="line">npm install</div><div class="line">npm install hexo-deployer-git  <span class="comment">#此时当前分支应显示为hexo，hexo可能洗掉 git环境</span></div></pre></td></tr></table></figure></p>
+<p>6.修改_config.yml中的deploy参数，分支应为master<br>7.这样一来，在GitHub上仓库就有两个分支，一个hexo分支用来存放网站的原始文件，一个master分支用来存放生成的静态网页。</p>
+<h2 id="2、关于日常的改动流程在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。"><a href="#2、关于日常的改动流程在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。" class="headerlink" title="2、关于日常的改动流程在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。"></a>2、关于日常的改动流程在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。</h2><p>依次执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git add .  <span class="comment">#最后有个 “.”  表示当前目录</span></div><div class="line">git commit -m <span class="string">"..."</span></div><div class="line">git push origin hexo  <span class="comment">#指令将改动推送到GitHub（此时当前分支应为hexo）</span></div><div class="line">hexo g -d  <span class="comment">#发布网站到master分支上</span></div></pre></td></tr></table></figure></p>
+<p>虽然两个过程顺序调转一般不会有问题，不过逻辑上这样的顺序是绝对没问题的（例如突然死机要重装了，悲催….的情况，调转顺序就有问题了）。</p>
+<h2 id="3、本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤"><a href="#3、本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤" class="headerlink" title="3、本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤"></a>3、本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤</h2><ol>
+<li>使用git clone 拷贝仓库（默认分支为hexo）；</li>
+<li>在本地新拷贝的github.io文件夹下通过Git bash依次执行下列指令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install hexo</div><div class="line">npm install</div><div class="line">npm install hexo-deployer-git  <span class="comment">#记得，不需要hexo init这条指令</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="hexo添加图片"><a href="#hexo添加图片" class="headerlink" title="hexo添加图片"></a>hexo添加图片</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save <span class="comment">#安装图片插件</span></div><div class="line"><span class="comment">#这样，在你新创建  hexo n  博客时就会在与博客同目录自动创建同名文件夹，将图片放入该文件夹</span></div><div class="line">&#123;% asset_img  你的图片全名包含后缀 %&#125;  <span class="comment">#博客中插入图片格式(使用markdown格式将无法显示)</span></div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/hexo/">hexo</a>, <a href="/tags/git-hexo/">git-hexo</a>, <a href="/tags/GitHub-HEXO/">GitHub+HEXO</a>, <a href="/tags/双分支管理hexo/">双分支管理hexo</a>, <a href="/tags/hexo添加图片/">hexo添加图片</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+
+<nav id="pagination">
+  
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Nächste Seite &raquo;</a>
+  </nav>
+
+</nav>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:yoursite.com">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">Neueste Artikel</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2019/08/09/command/">command</a>
+      </li>
+    
+      <li>
+        <a href="/2019/07/12/git-init/">git-init</a>
+      </li>
+    
+      <li>
+        <a href="/2019/07/12/My-pom-xml/">My-pom.xml</a>
+      </li>
+    
+      <li>
+        <a href="/2019/03/07/Java环境变量配置/">Java环境变量配置</a>
+      </li>
+    
+      <li>
+        <a href="/2018/10/19/test/">test</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/GitHub-HEXO/">GitHub+HEXO</a><small>1</small></li>
+  
+    <li><a href="/tags/OneDrive/">OneDrive</a><small>1</small></li>
+  
+    <li><a href="/tags/Remove-OneDrive/">Remove-OneDrive</a><small>1</small></li>
+  
+    <li><a href="/tags/cisco-c3600/">cisco-c3600</a><small>1</small></li>
+  
+    <li><a href="/tags/command/">command</a><small>1</small></li>
+  
+    <li><a href="/tags/git-hexo/">git-hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/github/">github</a><small>1</small></li>
+  
+    <li><a href="/tags/git初始化/">git初始化</a><small>1</small></li>
+  
+    <li><a href="/tags/hexo/">hexo</a><small>2</small></li>
+  
+    <li><a href="/tags/hexo添加图片/">hexo添加图片</a><small>1</small></li>
+  
+    <li><a href="/tags/java环境变量配置/">java环境变量配置</a><small>1</small></li>
+  
+    <li><a href="/tags/jdk环境变量配置/">jdk环境变量配置</a><small>1</small></li>
+  
+    <li><a href="/tags/linux/">linux</a><small>1</small></li>
+  
+    <li><a href="/tags/love-live/">love live</a><small>1</small></li>
+  
+    <li><a href="/tags/maven/">maven</a><small>1</small></li>
+  
+    <li><a href="/tags/maven设置conf/">maven设置conf</a><small>1</small></li>
+  
+    <li><a href="/tags/mvn/">mvn</a><small>1</small></li>
+  
+    <li><a href="/tags/mysql/">mysql</a><small>1</small></li>
+  
+    <li><a href="/tags/order/">order</a><small>1</small></li>
+  
+    <li><a href="/tags/pom/">pom</a><small>1</small></li>
+  
+    <li><a href="/tags/pom依赖/">pom依赖</a><small>1</small></li>
+  
+    <li><a href="/tags/print-spooler/">print spooler</a><small>1</small></li>
+  
+    <li><a href="/tags/setting-xml/">setting.xml</a><small>1</small></li>
+  
+    <li><a href="/tags/test/">test</a><small>1</small></li>
+  
+    <li><a href="/tags/tomcat/">tomcat</a><small>1</small></li>
+  
+    <li><a href="/tags/window10-update/">window10 update</a><small>1</small></li>
+  
+    <li><a href="/tags/window10禁止更新/">window10禁止更新</a><small>1</small></li>
+  
+    <li><a href="/tags/windows/">windows</a><small>1</small></li>
+  
+    <li><a href="/tags/双分支管理hexo/">双分支管理hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/命令/">命令</a><small>1</small></li>
+  
+    <li><a href="/tags/思科/">思科</a><small>1</small></li>
+  
+    <li><a href="/tags/我的依赖/">我的依赖</a><small>1</small></li>
+  
+    <li><a href="/tags/打印机服务/">打印机服务</a><small>1</small></li>
+  
+    <li><a href="/tags/测试用/">测试用</a><small>1</small></li>
+  
+    <li><a href="/tags/路由器/">路由器</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">Tag-Cloud</h3>
+  <div class="entry">
+    <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/git初始化/" style="font-size: 10px;">git初始化</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/java环境变量配置/" style="font-size: 10px;">java环境变量配置</a> <a href="/tags/jdk环境变量配置/" style="font-size: 10px;">jdk环境变量配置</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/mvn/" style="font-size: 10px;">mvn</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/order/" style="font-size: 10px;">order</a> <a href="/tags/pom/" style="font-size: 10px;">pom</a> <a href="/tags/pom依赖/" style="font-size: 10px;">pom依赖</a> <a href="/tags/print-spooler/" style="font-size: 10px;">print spooler</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/命令/" style="font-size: 10px;">命令</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/我的依赖/" style="font-size: 10px;">我的依赖</a> <a href="/tags/打印机服务/" style="font-size: 10px;">打印机服务</a> <a href="/tags/测试用/" style="font-size: 10px;">测试用</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
+  </div>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  <p>
+  
+  &copy; 2019 phoenix
+  
+  All rights reserved.</p>
+  <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</div>
+<div class="clearfix"></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id='bg'></div>
+</body>
+</html>
