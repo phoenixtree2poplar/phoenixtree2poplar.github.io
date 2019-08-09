@@ -14,11 +14,11 @@ tags:
 ### 安装Node.js: https://nodejs.org/en/
 ####  安装过程就不说了,一直Next就行了
 ## 1、进入Git Bash
-```bash
+```cmd
 npm install -g hexo  #注意：-g是指全局安装hexo
 ```
 安装完成后，在你喜爱的文件夹下（如D:\Hexo），执行以下指令(在D:\Hexo内点击鼠标右键，选择Git Bash)
-```bash
+```cmd
 hexo init  #Hexo即会自动在目标文件夹建立网站所需要的所有文件
 npm install  #安装依赖包
 hexo generate
