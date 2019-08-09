@@ -96,27 +96,6 @@ if 1==1 (
   pause  #暂停
 )
 ```
-## maven配置  settings.xml
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-		  http://maven.apache.org/xsd/settings-1.0.0.xsd">
-	<!-- localRepository元素根据个人习惯设置本地仓库下载位置，默认为${user.home}/.m2/repository -->
-    <localRepository>F:\mavenjar</localRepository>
-    <mirrors>
-		<!-- mirror 元素设置镜像，这里设置为阿里镜像,在国内阿里镜像较快 -->
-        <mirror>
-            <id>alimaven</id>
-            <mirrorOf>central</mirrorOf>
-            <name>aliyun maven</name>
-            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
-        </mirror>
-    </mirrors>
-    <profiles/>
-</settings>
-  ```
 ## Windows 命令
 ```cmd
 netstat -ano | findstr ":80 "   #查询80端口，记下最后一位数字，即PID
