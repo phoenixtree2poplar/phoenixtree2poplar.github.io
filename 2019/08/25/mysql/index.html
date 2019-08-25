@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8" />
   
-  <title>linux | Phoenixtree</title>
+  <title>mysql | Phoenixtree</title>
   <meta name="author" content="phoenix" />
 
+  
+  <meta name="description" content="Mysql 命令1234567desc table；  #显示表头select Host,User,plugin from user;  #用户名，登录方式，用户名，认证方式，ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor" />
   
 
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-  
+  <meta property="og:title" content="mysql" />
   <meta property="og:site_name" content="Phoenixtree" />
 
   
@@ -55,25 +57,47 @@
 </nav>
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title tag">linux</h2>
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2019-08-25T06:46:27.000Z"><a href="/2019/08/25/mysql/">2019-08-25</a></time>
+      
+      
+  
+    <h1 class="title">mysql</h1>
+  
 
-
-  <div class="archive">
+    </header>
+    <div class="entry">
+      
+        <h2 id="Mysql-命令"><a href="#Mysql-命令" class="headerlink" title="Mysql 命令"></a>Mysql 命令</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">desc table；  #显示表头</div><div class="line">select Host,User,plugin from user;  #用户名，登录方式，用户名，认证方式，</div><div class="line">ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'root';  #修改root认证方式mysql_native_password，密码为root</div><div class="line">FLUSH PRIVILEGES;  #刷新认证表</div><div class="line"><span class="built_in">set</span> password <span class="keyword">for</span> root@localhost = password('root');   #修改密码</div><div class="line">UPDATE user <span class="built_in">SET</span> Password=PASSWORD('newpassword') where USER='root';   #修改密码</div><div class="line">ALTER USER root@localhost identified WITH mysql_native_password BY 'root';  #修改密码</div></pre></td></tr></table></figure>
+<h2 id="Mysql5-7解压版cmd命令安装"><a href="#Mysql5-7解压版cmd命令安装" class="headerlink" title="Mysql5.7解压版cmd命令安装"></a>Mysql5.7解压版cmd命令安装</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">解压目录下新建  my.ini  文件，内容如下</div><div class="line">----------</div><div class="line">[mysqld]</div><div class="line">port= <span class="number">3306</span>                      #服务器端口</div><div class="line">basedir="D:/<span class="built_in">path</span>/mysql7"        #安装目录（因人而异）</div><div class="line">datadir="D:/<span class="built_in">path</span>/mysql7/data"   #数据保存位置（必须存在，不然报错）</div><div class="line">max_connections=<span class="number">200</span></div><div class="line">character-<span class="built_in">set</span>-server=utf8</div><div class="line">default-storage-engine=INNODB</div><div class="line">sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES</div><div class="line">[mysql]</div><div class="line">default-character-<span class="built_in">set</span>=utf8</div><div class="line">----------</div><div class="line">在解压目录bin下启动<span class="built_in">cmd</span>（管理员权限）</div><div class="line">mysqld --initialize-insecure  #初始化无密码数据库</div><div class="line">mysqld --install  sql7  #安装服务，服务名为 sql7（个人喜好）</div><div class="line"><span class="built_in">net</span> <span class="built_in">start</span> sql7           #开启数据库 提示成功，表示安装成功</div></pre></td></tr></table></figure>
+      
+    </div>
     
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2019-08-09T14:24:12.000Z"><a href="/2019/08/09/command/">2019-08-09</a></time>
-            
-              <h1 class="title"><a href="/2019/08/09/command/">command</a></h1>
-            
-          </header>
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
         </div>
-      </article>
-    
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/mysql7/">mysql7</a>, <a href="/tags/数据安装/">数据安装</a>, <a href="/tags/sql/">sql</a>
   </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
 </div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
