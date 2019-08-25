@@ -22,6 +22,7 @@ tags:
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>5.1.46</version>
+                <!-- 版本过高无法生成 delete updata 方法 -->
             </dependency>
         </dependencies>
     </plugin>
