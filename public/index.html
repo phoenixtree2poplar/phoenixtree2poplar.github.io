@@ -62,6 +62,49 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2019-08-25T01:15:46.000Z"><a href="/2019/08/25/idea/">2019-08-25</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2019/08/25/idea/">idea</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="idea快捷键"><a href="#idea快捷键" class="headerlink" title="idea快捷键"></a>idea快捷键</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Alt + Insert  #set/get; 构造方法;  toString; 重写方法。。。</div><div class="line">Ctrl+Alt+T  #将代码包在一个块中，例如try/catch  ;synchronized等</div><div class="line">Ctrl+E  #最近使用的文件</div><div class="line">Ctrl+Shift+E  #最近更改的文件</div><div class="line">Ctrl+P  #可以显示参数信息</div><div class="line">Ctrl + O  #查看我们继承的类或者接口中的方法，以及我们要实现的方法</div><div class="line">Ctrl + Alt + b  #查看接口实现类中方法</div><div class="line">Ctrl+Shift+F  #在路径中查找</div><div class="line">Ctrl+Shift+R  #在路径中替换</div><div class="line">Ctrl+Alt+O  #优化导入的类和包</div></pre></td></tr></table></figure>
+<h2 id="idea配置"><a href="#idea配置" class="headerlink" title="idea配置"></a>idea配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">Ctrl+Alt+s --&gt; Font -&gt; Mononspaced；Size -&gt; 18；Line Spacing -&gt; 1.2；  #字体设置</div><div class="line">Ctrl+Alt+s --&gt; Compiler -&gt; Build project automatically；  #开启IDEA的自动编译（静态）</div><div class="line">Ctrl+Alt+Shift+/ --&gt; Registry -&gt; compiler.automake.allow.when.app.running  #开启IDEA的自动编译（动态）</div><div class="line">顶部菜单 --&gt; Edit Configurations -&gt; SpringBoot插件 -&gt; 目标项目 -&gt; 勾选热更新  #开启IDEA的热部署策略（非常重要）</div><div class="line">在POM文件添加热部署插件  #在项目添加热部署插件（可选）</div><div class="line">&lt;dependency&gt;</div><div class="line">    &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;</div><div class="line">    &lt;artifactId&gt;spring-boot-devtools&lt;/artifactId&gt;</div><div class="line">    &lt;scope&gt;runtime&lt;/scope&gt;</div><div class="line">&lt;/dependency&gt;</div></pre></td></tr></table></figure>
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/idea快捷键/">idea快捷键</a>, <a href="/tags/idea配置/">idea配置</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2019-08-09T14:24:12.000Z"><a href="/2019/08/09/command/">2019-08-09</a></time>
       
       
@@ -73,10 +116,8 @@
     <div class="entry">
       
         <h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">git fetch --all   <span class="comment">#强制拉取</span></div><div class="line">git reset --hard origin/master  <span class="comment">#强制覆盖本地</span></div><div class="line">git checkout -b dev  <span class="comment">#从当前分支创建并切换分支到dev</span></div><div class="line">git push --<span class="built_in">set</span>-upstream origin dev  <span class="comment">#当前分支推送远程分支dev</span></div><div class="line">git push origin :dev  <span class="comment">#推送空分支到远程即删除远程分支，需当前不在该分支</span></div><div class="line">git rm -r --cached .  <span class="comment">#刷新文件缓存</span></div><div class="line"><span class="comment">#https://njuferret.github.io/2018/08/24/git-usage/  #git乱码</span></div><div class="line"><span class="comment">#https://github.com/phoenixtree2poplar/my-git/blob/master/git-workflow-tutorial.md  #git工作流</span></div></pre></td></tr></table></figure>
-<h2 id="gitignore文件"><a href="#gitignore文件" class="headerlink" title="gitignore文件"></a>gitignore文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.idea/</div><div class="line">logs/</div><div class="line">target/</div></pre></td></tr></table></figure>
 <h2 id="Maven命令"><a href="#Maven命令" class="headerlink" title="Maven命令"></a>Maven命令</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">mvn archetype:create -DgroupId=packageName -DartifactId=projectName  #创建Maven的普通Java项目</div><div class="line">mvn archetype:generate -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp  #创建Maven的Web项目</div><div class="line">mvn compile  #编译源代码</div><div class="line">mvn test-compile  #编译测试代码</div><div class="line">mvn test  #运行测试</div><div class="line">mvn package  #打包</div><div class="line">mvn clean  #清除产生的项目</div><div class="line">mvn idea:idea  #生成idea项目</div><div class="line">mvn install  #在本地Repository中安装jar</div><div class="line">mvn -DskipTests clean package  #本地跳过测试打包</div></pre></td></tr></table></figure>
 <h2 id="free"><a href="#free" class="headerlink" title="free"></a>free</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">PURGE RECYCLEBIN  #清除回收BIN，gaussdb数据库命令</div><div class="line">call mvn -f pom.xml dependency:copy-dependencies  #根据pom.xml拉取仓库</div></pre></td></tr></table></figure>
-<h2 id="idea"><a href="#idea" class="headerlink" title="idea"></a>idea</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">Alt + Insert  #set/get; 构造方法;  toString; 重写方法。。。</div><div class="line">Ctrl+Alt+T  #将代码包在一个块中，例如try/catch  ;synchronized等</div><div class="line">Ctrl+E  #最近使用的文件</div><div class="line">Ctrl+Shift+E  #最近更改的文件</div><div class="line">Ctrl+P  #可以显示参数信息</div><div class="line">Ctrl + O  #查看我们继承的类或者接口中的方法，以及我们要实现的方法</div><div class="line">Ctrl + Alt + b  #查看接口实现类中方法</div><div class="line">Ctrl+Shift+F  #在路径中查找</div><div class="line">Ctrl+Shift+R  #在路径中替换</div><div class="line">Ctrl+Alt+O  #优化导入的类和包</div><div class="line">#idea修改配置  Font(字体) Mononspaced；Size 18；Line Spacing 0.8；</div></pre></td></tr></table></figure>
 <h2 id="Hexo-命令"><a href="#Hexo-命令" class="headerlink" title="Hexo 命令"></a>Hexo 命令</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo init [folder]  #Hexo 默认在目前的文件夹建立网站</div><div class="line">hexo n　　＃　　== hexo new "主题"  新建一篇文章，默认使用 _config.yml 中的 default_layout 参数代替</div><div class="line">hexo g  #　　== hexo generate  生产静态html</div><div class="line">hexo s  #　　== hexo server  #本地预览   localhost:<span class="number">4000</span></div><div class="line">hexo d  #　　== hexo deploy  #推送远程发布，即正式发布</div><div class="line">hexo s -g  #本地测试</div><div class="line">hexo d -g  #发布网页</div></pre></td></tr></table></figure>
 <h2 id="bat脚本"><a href="#bat脚本" class="headerlink" title="bat脚本"></a>bat脚本</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">@<span class="built_in">echo</span> off</div><div class="line"><span class="built_in">echo</span> "开始更新..  执行 git pull"</div><div class="line"><span class="built_in">cd</span> %~dp0</div><div class="line"><span class="built_in">set</span> currentFolder=%~dp0</div><div class="line"><span class="keyword">for</span> /D <span class="variable">%%i</span> <span class="keyword">in</span> (Folder*) <span class="keyword">do</span> ( </div><div class="line">  <span class="built_in">echo</span> <span class="variable">%%i</span></div><div class="line">  <span class="built_in">cd</span> <span class="variable">%%i</span></div><div class="line">  git pull</div><div class="line"><span class="comment">  rem git branch  字段rem是用来注释的 “:” 也可以用来注释</span></div><div class="line">  <span class="built_in">cd</span> ..</div><div class="line">)</div><div class="line"><span class="built_in">pause</span></div><div class="line"></div><div class="line"><span class="keyword">if</span> <span class="number">1</span>==<span class="number">1</span> (</div><div class="line">  <span class="built_in">xcopy</span> /y *.jar <span class="variable">%currentFolder%</span>jar  #bat拷贝命令参数/y是覆盖</div><div class="line">  <span class="built_in">rd</span> /q/s package  #删除目录package /q不询问，静默模式 /s目录树迭代删除</div><div class="line">  <span class="built_in">md</span> package  #创建目录package</div><div class="line">  jar xf dev.jar  #静默解压dev.jar到当前目录</div><div class="line">  <span class="built_in">pause</span>  #暂停</div><div class="line">)</div></pre></td></tr></table></figure>
 <h2 id="Windows-命令"><a href="#Windows-命令" class="headerlink" title="Windows 命令"></a>Windows 命令</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">netstat -ano | <span class="built_in">findstr</span> ":<span class="number">80</span> "   #查询<span class="number">80</span>端口，记下最后一位数字，即PID</div><div class="line">tasklist /fi "PID eq <span class="number">4</span>"       #查询进程号为<span class="number">4</span>的服务名称</div><div class="line"><span class="built_in">taskkill</span> /pid <span class="number">4</span> /f   #根据pid 关闭进程，其中 /f 表示强制关闭该进程</div><div class="line"><span class="built_in">taskkill</span> /im nginx.exe   #根据服务名称关闭进程</div><div class="line">#详细参考https://blog.csdn.<span class="built_in">net</span>/wangmx1993328/article/details/<span class="number">80923829</span></div><div class="line"></div><div class="line">regedit   #打开注册表编辑器</div><div class="line">slmgr.vbs -dlv  #该命令命令可以查询到Win10的激活信息，包括：激活ID、安装ID、激活截止日期等信息     </div><div class="line">slmgr.vbs -dli  #命令可以查询到操作系统版本、部分产品密钥、许可证状态等</div><div class="line">slmgr.vbs -xpr  #命令可以查询Win10是否永久激活</div></pre></td></tr></table></figure>
@@ -458,66 +499,6 @@
 
 
 
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2016-08-12T09:06:56.000Z"><a href="/2016/08/12/install-hexo/">2016-08-12</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2016/08/12/install-hexo/">install-hexo</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h1 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h1><h3 id="安装Windows环境"><a href="#安装Windows环境" class="headerlink" title="安装Windows环境"></a>安装Windows环境</h3><h3 id="安装Git-https-www-git-scm-com"><a href="#安装Git-https-www-git-scm-com" class="headerlink" title="安装Git: https://www.git-scm.com/"></a>安装Git: <a href="https://www.git-scm.com/" target="_blank" rel="external">https://www.git-scm.com/</a></h3><h3 id="安装Node-js-https-nodejs-org-en"><a href="#安装Node-js-https-nodejs-org-en" class="headerlink" title="安装Node.js: https://nodejs.org/en/"></a>安装Node.js: <a href="https://nodejs.org/en/" target="_blank" rel="external">https://nodejs.org/en/</a></h3><h4 id="安装过程就不说了-一直Next就行了"><a href="#安装过程就不说了-一直Next就行了" class="headerlink" title="安装过程就不说了,一直Next就行了"></a>安装过程就不说了,一直Next就行了</h4><h2 id="1、进入Git-Bash"><a href="#1、进入Git-Bash" class="headerlink" title="1、进入Git Bash"></a>1、进入Git Bash</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g hexo  #注意：-g是指全局安装hexo</div></pre></td></tr></table></figure>
-<p>安装完成后，在你喜爱的文件夹下（如D:\Hexo），执行以下指令(在D:\Hexo内点击鼠标右键，选择Git Bash)<br><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">hexo init  #Hexo即会自动在目标文件夹建立网站所需要的所有文件</div><div class="line">npm install  #安装依赖包</div><div class="line">hexo generate</div><div class="line">hexo server  #也可以输入缩写 hexo s -g (gener + server)</div></pre></td></tr></table></figure></p>
-<p>现在我们已经搭建起本地的hexo博客了，执行以下命令(在D:\Hexo)，然后到浏览器输入localhost:4000看看。</p>
-<h2 id="2、创建github账号并添加key-网上有教程就不进行说明了"><a href="#2、创建github账号并添加key-网上有教程就不进行说明了" class="headerlink" title="2、创建github账号并添加key(网上有教程就不进行说明了)"></a>2、创建github账号并添加key(网上有教程就不进行说明了)</h2><p>建立与你用户名对应的仓库，仓库名必须为【your_user_name.github.io】，固定写法然后建立关联<br>现在我们需要_config.yml文件，来建立关联，可参考<a href="https://hexo.io/" target="_blank" rel="external">官网</a>说明 <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">https://hexo.io/docs/deployment.html</a><br>编辑  _config.yml 翻到最下面，改成我这样子的<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="attr">deploy:</span></div><div class="line"><span class="attr">  type:</span> <span class="string">git</span></div><div class="line"><span class="attr">  repo:</span> <span class="string">&lt;repository</span> <span class="string">url&gt;</span></div><div class="line"><span class="attr">  branch:</span> <span class="string">[branch]</span></div><div class="line"><span class="attr">  message:</span> <span class="string">[message]</span></div></pre></td></tr></table></figure></p>
-<p>安装hexo-deployer-git<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install hexo-deployer-git --save  <span class="comment">#支持git发布</span></div><div class="line">hexo d -g  <span class="comment">#发布你的 blog</span></div></pre></td></tr></table></figure></p>
-<p>你的博客就搭建成功了  网址为your_user_name.github.io</p>
-<h2 id="3、国内直接使用-npm-的官方镜像是非常慢的，这里推荐使用淘宝-NPM-镜像。"><a href="#3、国内直接使用-npm-的官方镜像是非常慢的，这里推荐使用淘宝-NPM-镜像。" class="headerlink" title="3、国内直接使用 npm 的官方镜像是非常慢的，这里推荐使用淘宝 NPM 镜像。"></a>3、国内直接使用 npm 的官方镜像是非常慢的，这里推荐使用淘宝 NPM 镜像。</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org <span class="comment">#这样就可以使用 cnpm 命令来安装模块了</span></div><div class="line">cnpm install [name]</div></pre></td></tr></table></figure>
-<h2 id="4、新版特性-支持缩写"><a href="#4、新版特性-支持缩写" class="headerlink" title="4、新版特性  支持缩写"></a>4、新版特性  支持缩写</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">hexo g == hexo generate <span class="comment">#生产静态html</span></div><div class="line">hexo s == hexo server  <span class="comment">#本地预览   localhost:4000</span></div><div class="line">hexo d == hexo deploy  <span class="comment">#推送远程发布，即正式发布</span></div><div class="line">hexo n == hexo new</div><div class="line">hexo s -g  <span class="comment">#本地测试</span></div><div class="line">hexo d -g  <span class="comment">#git发布</span></div></pre></td></tr></table></figure>
-<h1 id="双分支管理git"><a href="#双分支管理git" class="headerlink" title="双分支管理git"></a>双分支管理git</h1><h2 id="1、创建双分支"><a href="#1、创建双分支" class="headerlink" title="1、创建双分支"></a>1、创建双分支</h2><p>1.创建仓库;<br>2.创建两个分支：master 与 hexo<br>3.设置hexo为默认分支（因为我们只需要手动管理这个分支上的Hexo网站文件）<br>4.使用git clone 拷贝仓库<br>5.在本地github.io文件夹下通过Git bash依次执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">npm install hexo</div><div class="line">hexo init</div><div class="line">npm install</div><div class="line">npm install hexo-deployer-git  <span class="comment">#此时当前分支应显示为hexo，hexo可能洗掉 git环境</span></div></pre></td></tr></table></figure></p>
-<p>6.修改_config.yml中的deploy参数，分支应为master<br>7.这样一来，在GitHub上仓库就有两个分支，一个hexo分支用来存放网站的原始文件，一个master分支用来存放生成的静态网页。</p>
-<h2 id="2、关于日常的改动流程在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。"><a href="#2、关于日常的改动流程在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。" class="headerlink" title="2、关于日常的改动流程在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。"></a>2、关于日常的改动流程在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理。</h2><p>依次执行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">git add .  <span class="comment">#最后有个 “.”  表示当前目录</span></div><div class="line">git commit -m <span class="string">"..."</span></div><div class="line">git push origin hexo  <span class="comment">#指令将改动推送到GitHub（此时当前分支应为hexo）</span></div><div class="line">hexo g -d  <span class="comment">#发布网站到master分支上</span></div></pre></td></tr></table></figure></p>
-<p>虽然两个过程顺序调转一般不会有问题，不过逻辑上这样的顺序是绝对没问题的（例如突然死机要重装了，悲催….的情况，调转顺序就有问题了）。</p>
-<h2 id="3、本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤"><a href="#3、本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤" class="headerlink" title="3、本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤"></a>3、本地资料丢失后的流程当重装电脑之后，或者想在其他电脑上修改博客，可以使用下列步骤</h2><ol>
-<li>使用git clone 拷贝仓库（默认分支为hexo）；</li>
-<li>在本地新拷贝的github.io文件夹下通过Git bash依次执行下列指令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install hexo</div><div class="line">npm install</div><div class="line">npm install hexo-deployer-git  <span class="comment">#记得，不需要hexo init这条指令</span></div></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="hexo添加图片"><a href="#hexo添加图片" class="headerlink" title="hexo添加图片"></a>hexo添加图片</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">npm install https://github.com/CodeFalling/hexo-asset-image --save <span class="comment">#安装图片插件</span></div><div class="line"><span class="comment">#这样，在你新创建  hexo n  博客时就会在与博客同目录自动创建同名文件夹，将图片放入该文件夹</span></div><div class="line">&#123;% asset_img  你的图片全名包含后缀 %&#125;  <span class="comment">#博客中插入图片格式(使用markdown格式将无法显示)</span></div></pre></td></tr></table></figure>
-
-      
-    </div>
-    
-    <footer>
-        <div class="alignright">
-          
-          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
-        </div>
-        
-        
-  
-  <div class="tags">
-    <a href="/tags/hexo/">hexo</a>, <a href="/tags/git-hexo/">git-hexo</a>, <a href="/tags/GitHub-HEXO/">GitHub+HEXO</a>, <a href="/tags/双分支管理hexo/">双分支管理hexo</a>, <a href="/tags/hexo添加图片/">hexo添加图片</a>
-  </div>
-
-        <!-- partial('post/share') -->
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
 
 <nav id="pagination">
   
@@ -543,6 +524,10 @@
   <ul class="entry">
     
       <li>
+        <a href="/2019/08/25/idea/">idea</a>
+      </li>
+    
+      <li>
         <a href="/2019/08/09/command/">command</a>
       </li>
     
@@ -556,10 +541,6 @@
     
       <li>
         <a href="/2019/03/07/Java环境变量配置/">Java环境变量配置</a>
-      </li>
-    
-      <li>
-        <a href="/2018/10/19/test/">test</a>
       </li>
     
   </ul>
@@ -590,6 +571,10 @@
     <li><a href="/tags/hexo/">hexo</a><small>2</small></li>
   
     <li><a href="/tags/hexo添加图片/">hexo添加图片</a><small>1</small></li>
+  
+    <li><a href="/tags/idea快捷键/">idea快捷键</a><small>1</small></li>
+  
+    <li><a href="/tags/idea配置/">idea配置</a><small>1</small></li>
   
     <li><a href="/tags/java环境变量配置/">java环境变量配置</a><small>1</small></li>
   
@@ -649,7 +634,7 @@
 <div class="widget tagcloud">
   <h3 class="title">Tag-Cloud</h3>
   <div class="entry">
-    <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/git初始化/" style="font-size: 10px;">git初始化</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/java环境变量配置/" style="font-size: 10px;">java环境变量配置</a> <a href="/tags/jdk环境变量配置/" style="font-size: 10px;">jdk环境变量配置</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/mvn/" style="font-size: 10px;">mvn</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/order/" style="font-size: 10px;">order</a> <a href="/tags/pom/" style="font-size: 10px;">pom</a> <a href="/tags/pom依赖/" style="font-size: 10px;">pom依赖</a> <a href="/tags/print-spooler/" style="font-size: 10px;">print spooler</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/命令/" style="font-size: 10px;">命令</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/我的依赖/" style="font-size: 10px;">我的依赖</a> <a href="/tags/打印机服务/" style="font-size: 10px;">打印机服务</a> <a href="/tags/测试用/" style="font-size: 10px;">测试用</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
+    <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/git初始化/" style="font-size: 10px;">git初始化</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/idea快捷键/" style="font-size: 10px;">idea快捷键</a> <a href="/tags/idea配置/" style="font-size: 10px;">idea配置</a> <a href="/tags/java环境变量配置/" style="font-size: 10px;">java环境变量配置</a> <a href="/tags/jdk环境变量配置/" style="font-size: 10px;">jdk环境变量配置</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/mvn/" style="font-size: 10px;">mvn</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/order/" style="font-size: 10px;">order</a> <a href="/tags/pom/" style="font-size: 10px;">pom</a> <a href="/tags/pom依赖/" style="font-size: 10px;">pom依赖</a> <a href="/tags/print-spooler/" style="font-size: 10px;">print spooler</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/命令/" style="font-size: 10px;">命令</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/我的依赖/" style="font-size: 10px;">我的依赖</a> <a href="/tags/打印机服务/" style="font-size: 10px;">打印机服务</a> <a href="/tags/测试用/" style="font-size: 10px;">测试用</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
   </div>
 </div>
 

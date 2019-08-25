@@ -1,0 +1,33 @@
+---
+title: idea
+date: 2019-08-25 09:15:46
+tags:
+    - idea快捷键
+    - idea配置
+---
+## idea快捷键
+```
+Alt + Insert  #set/get; 构造方法;  toString; 重写方法。。。
+Ctrl+Alt+T  #将代码包在一个块中，例如try/catch  ;synchronized等
+Ctrl+E  #最近使用的文件
+Ctrl+Shift+E  #最近更改的文件
+Ctrl+P  #可以显示参数信息
+Ctrl + O  #查看我们继承的类或者接口中的方法，以及我们要实现的方法
+Ctrl + Alt + b  #查看接口实现类中方法
+Ctrl+Shift+F  #在路径中查找
+Ctrl+Shift+R  #在路径中替换
+Ctrl+Alt+O  #优化导入的类和包
+```
+## idea配置
+```
+Ctrl+Alt+s --> Font -> Mononspaced；Size -> 18；Line Spacing -> 1.2；  #字体设置
+Ctrl+Alt+s --> Compiler -> Build project automatically；  #开启IDEA的自动编译（静态）
+Ctrl+Alt+Shift+/ --> Registry -> compiler.automake.allow.when.app.running  #开启IDEA的自动编译（动态）
+顶部菜单 --> Edit Configurations -> SpringBoot插件 -> 目标项目 -> 勾选热更新  #开启IDEA的热部署策略（非常重要）
+在POM文件添加热部署插件  #在项目添加热部署插件（可选）
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+    <scope>runtime</scope>
+</dependency>
+```
