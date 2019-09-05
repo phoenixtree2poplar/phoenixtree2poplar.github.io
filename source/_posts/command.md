@@ -42,6 +42,8 @@ mvn -DskipTests clean package  #本地跳过测试打包
 ```
 PURGE RECYCLEBIN  #清除回收BIN，gaussdb数据库命令
 call mvn -f pom.xml dependency:copy-dependencies  #根据pom.xml拉取仓库
+# java远程调试
+java -Xdebug -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=20001 -Dfile.encoding=utf-8 -jar poplar.jar --server.port=20000
 ```
 ## Hexo 命令
 ```cmd
