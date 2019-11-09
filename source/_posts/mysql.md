@@ -12,9 +12,10 @@ desc table；  #显示表头
 select Host,User,plugin from user;  #用户名，登录方式，用户名，认证方式，
 ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'root';  #修改root认证方式mysql_native_password，密码为root
 FLUSH PRIVILEGES;  #刷新认证表
-set password for root@localhost = password('root');   #修改密码
 UPDATE user SET Password=PASSWORD('newpassword') where USER='root';   #修改密码
 ALTER USER root@localhost identified WITH mysql_native_password BY 'root';  #修改密码
+
+set password for root@localhost = password('root');   #进入数据修改密码 mysql5.7
 ```
 ## Mysql5.7解压版cmd命令安装
 ```cmd
