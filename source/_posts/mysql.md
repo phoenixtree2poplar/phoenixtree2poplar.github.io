@@ -16,6 +16,8 @@ UPDATE user SET Password=PASSWORD('newpassword') where USER='root';   #修改密
 ALTER USER root@localhost identified WITH mysql_native_password BY 'root';  #修改密码
 
 set password for root@localhost = password('root');   #进入数据修改密码 mysql5.7
+mysql> use mysql;  #切换库
+mysql> update user set host = '%'  where user = 'root';  #授权非本地登录
 ```
 ## Mysql5.7解压版cmd命令安装
 ```cmd
