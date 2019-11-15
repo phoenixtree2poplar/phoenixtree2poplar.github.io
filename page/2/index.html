@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   
-  <title>Page 2 | Phoenixtree</title>
+  <title>Seite 2 | Phoenixtree</title>
   <meta name="author" content="phoenix" />
 
   
@@ -56,6 +56,49 @@
 <div class="clearfix"></div></header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2018-08-31T02:53:29.000Z"><a href="/2018/08/31/maven配置/">2018-08-31</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2018/08/31/maven配置/">maven配置</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h2 id="先附上缩减后的源配置文件-setting-xml-在-maven主目录-conf下"><a href="#先附上缩减后的源配置文件-setting-xml-在-maven主目录-conf下" class="headerlink" title="先附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下"></a>先附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0"</span></span></div><div class="line">          <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></div><div class="line">          <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/SETTINGS/1.0.0</span></div><div class="line">          http://maven.apache.org/xsd/settings-1.0.0.xsd"&gt;</div><div class="line">    <span class="comment">&lt;!-- localRepository元素根据个人习惯设置本地仓库下载位置，默认为$&#123;user.home&#125;/.m2/repository --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">localRepository</span>&gt;</span>D:\mavenjar<span class="tag">&lt;/<span class="name">localRepository</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- mirror 元素设置镜像，这里设置为阿里镜像,在国内阿里镜像较快 --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></div></pre></td></tr></table></figure>
+
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/maven设置conf/">maven设置conf</a>, <a href="/tags/setting-xml/">setting.xml</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
   <article class="post">
   
   <div class="post-content">
@@ -295,7 +338,7 @@
 <nav id="pagination">
   
   <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/">&laquo; Vorherige Seite</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
   </nav>
 
 </nav>
@@ -303,7 +346,7 @@
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Search">
+    <input type="search" name="q" results="0" placeholder="Suche">
     <input type="hidden" name="q" value="site:yoursite.com">
   </form>
 </div>
@@ -312,8 +355,12 @@
 
   
 <div class="widget tag">
-  <h3 class="title">Recent Posts</h3>
+  <h3 class="title">Neueste Artikel</h3>
   <ul class="entry">
+    
+      <li>
+        <a href="/2019/11/15/Windows/">Windows</a>
+      </li>
     
       <li>
         <a href="/2019/09/03/docker/">docker</a>
@@ -331,10 +378,6 @@
         <a href="/2019/08/25/mysql/">mysql</a>
       </li>
     
-      <li>
-        <a href="/2019/08/25/idea/">idea</a>
-      </li>
-    
   </ul>
 </div>
 
@@ -349,6 +392,10 @@
     <li><a href="/tags/OneDrive/">OneDrive</a><small>1</small></li>
   
     <li><a href="/tags/Remove-OneDrive/">Remove-OneDrive</a><small>1</small></li>
+  
+    <li><a href="/tags/bat/">bat</a><small>1</small></li>
+  
+    <li><a href="/tags/bat脚本/">bat脚本</a><small>1</small></li>
   
     <li><a href="/tags/cisco-c3600/">cisco-c3600</a><small>1</small></li>
   
@@ -414,7 +461,7 @@
   
     <li><a href="/tags/双分支管理hexo/">双分支管理hexo</a><small>1</small></li>
   
-    <li><a href="/tags/命令/">命令</a><small>1</small></li>
+    <li><a href="/tags/命令/">命令</a><small>2</small></li>
   
     <li><a href="/tags/容器/">容器</a><small>1</small></li>
   
@@ -436,9 +483,9 @@
 
   
 <div class="widget tagcloud">
-  <h3 class="title">Tag Cloud</h3>
+  <h3 class="title">Tag-Cloud</h3>
   <div class="entry">
-    <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/generationConfig-xml/" style="font-size: 10px;">generationConfig.xml</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/git初始化/" style="font-size: 10px;">git初始化</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/idea快捷键/" style="font-size: 10px;">idea快捷键</a> <a href="/tags/idea配置/" style="font-size: 10px;">idea配置</a> <a href="/tags/java环境变量配置/" style="font-size: 10px;">java环境变量配置</a> <a href="/tags/jdk环境变量配置/" style="font-size: 10px;">jdk环境变量配置</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/mvn/" style="font-size: 10px;">mvn</a> <a href="/tags/mybatis/" style="font-size: 10px;">mybatis</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/mysql7/" style="font-size: 10px;">mysql7</a> <a href="/tags/order/" style="font-size: 10px;">order</a> <a href="/tags/print-spooler/" style="font-size: 10px;">print spooler</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/命令/" style="font-size: 10px;">命令</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/打印机服务/" style="font-size: 10px;">打印机服务</a> <a href="/tags/数据安装/" style="font-size: 10px;">数据安装</a> <a href="/tags/测试用/" style="font-size: 10px;">测试用</a> <a href="/tags/缓存/" style="font-size: 10px;">缓存</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
+    <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/bat/" style="font-size: 10px;">bat</a> <a href="/tags/bat脚本/" style="font-size: 10px;">bat脚本</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/generationConfig-xml/" style="font-size: 10px;">generationConfig.xml</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/git初始化/" style="font-size: 10px;">git初始化</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/idea快捷键/" style="font-size: 10px;">idea快捷键</a> <a href="/tags/idea配置/" style="font-size: 10px;">idea配置</a> <a href="/tags/java环境变量配置/" style="font-size: 10px;">java环境变量配置</a> <a href="/tags/jdk环境变量配置/" style="font-size: 10px;">jdk环境变量配置</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/mvn/" style="font-size: 10px;">mvn</a> <a href="/tags/mybatis/" style="font-size: 10px;">mybatis</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/mysql7/" style="font-size: 10px;">mysql7</a> <a href="/tags/order/" style="font-size: 10px;">order</a> <a href="/tags/print-spooler/" style="font-size: 10px;">print spooler</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/命令/" style="font-size: 20px;">命令</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/打印机服务/" style="font-size: 10px;">打印机服务</a> <a href="/tags/数据安装/" style="font-size: 10px;">数据安装</a> <a href="/tags/测试用/" style="font-size: 10px;">测试用</a> <a href="/tags/缓存/" style="font-size: 10px;">缓存</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
   </div>
 </div>
 
