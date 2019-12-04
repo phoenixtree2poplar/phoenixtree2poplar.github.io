@@ -20,6 +20,7 @@ Ctrl+Alt+O  #优化导入的类和包
 ```
 ## idea配置
 ```
+Ctrl+Alt+s --> General -> Auto import；fly字段2个勾选上  #idea自动导入jar包
 Ctrl+Alt+s --> Font -> Mononspaced；Size -> 18；Line Spacing -> 1.2；  #字体设置
 Ctrl+Alt+s --> Compiler -> Build project automatically；  #开启IDEA的自动编译（静态）
 Ctrl+Alt+Shift+/ --> Registry -> compiler.automake.allow.when.app.running  #开启IDEA的自动编译（动态）
