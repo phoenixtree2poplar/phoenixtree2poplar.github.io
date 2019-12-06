@@ -5,6 +5,16 @@ tags:
     - idea快捷键
     - idea配置
 ---
+## idea系统配置
+### 在安装目录 \idea\bin
+#### idea.exe.vmoptions idea64.exe.vmoptions 2个文件可修改运行内存，根据物理机性能而定
+#### idea.properties 文件修改可更改默认配置目录，最上面添加如下，可以不再C盘存放配置文件
+```properties
+idea.config.path=F:/path/ideaconfig/config
+idea.system.path=F:/path/ideaconfig/system
+idea.plugins.path=F:/path/ideaconfig/plugins
+idea.log.path=F:/path/ideaconfig/log
+```
 ## idea快捷键
 ```
 Alt + Insert  #set/get; 构造方法;  toString; 重写方法。。。
