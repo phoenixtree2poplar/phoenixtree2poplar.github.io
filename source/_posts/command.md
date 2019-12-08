@@ -3,7 +3,6 @@ title: command
 date: 2019-08-09 22:24:12
 tags:
 	- 命令
-	- mysql
 	- hexo
 	- linux
 	- tomcat
