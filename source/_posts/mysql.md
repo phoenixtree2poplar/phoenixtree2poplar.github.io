@@ -2,7 +2,7 @@
 title: mysql
 date: 2019-08-25 14:46:27
 tags:
-    - mysql7
+    - mysql
     - 数据安装
     - sql
 ---
@@ -19,7 +19,7 @@ set password for root@localhost = password('root');   #进入数据修改密码 
 mysql> use mysql;  #切换库
 mysql> update user set host = '%'  where user = 'root';  #授权非本地登录
 ```
-## Mysql5.7解压版cmd命令安装
+## Mysql7解压版cmd命令安装
 ```cmd
 解压目录下新建  my.ini  文件，内容如下
 ----------
@@ -40,7 +40,7 @@ mysqld --install  sql7  #安装服务，服务名为 sql7（个人喜好）
 net start sql7           #开启数据库 提示成功，表示安装成功
 ```
 ## 连接MySQL时的url解析
-```xml
+```
 jdbc:mysql://localhost:3306/popalr?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&useSSL=true
 ```
 #### localhost：地址
@@ -57,3 +57,4 @@ jdbc:mysql://localhost:3306/popalr?useUnicode=true&characterEncoding=UTF-8&zeroD
 #### jdbc:mysql://localhost:3306/mydbname?zeroDateTimeBehavior=convertToNull
 #### 从另一个层面讲，这类异常的触发也与timestamp赋值的操作有关，如果能够在设计阶段和记录写入阶段做好逻辑判断，避免写入 '0000-00-00 00:00:00'这类值，那么也可以避免出现 Cannot convert value '0000-00-00 00:00:00' from column N to TIMESTAMP的错 误。
 #### useSSL=true：使用JDBC跟你的数据库连接的时候，你的JDBC版本与MySQL版本不兼容，MySQL的版本更高一些，在连接语句后加上“useSSL=‘true’” ，就可以连接到数据库了。
+### mysql最强笔记 【https://mp.weixin.qq.com/s/mzFdir8920uYmj5AI8TJ8Q
