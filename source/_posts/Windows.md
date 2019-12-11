@@ -35,8 +35,6 @@ for /D %%i in (Folder*) do (
 )
 pause
 
-for /l %%i in (1,1,40) do (echo INSERT INTO `t_user` VALUES (%%i, 'poplar%%i', 'di%%i', '%%i'^)^; >> sql-test-user.sh)
-
 if 1==1 (
   xcopy /y *.jar %currentFolder%jar  #bat拷贝命令参数/y是覆盖
   rd /q/s package  #删除目录package /q不询问，静默模式 /s目录树迭代删除
@@ -44,4 +42,6 @@ if 1==1 (
   jar xf dev.jar  #静默解压dev.jar到当前目录
   pause  #暂停
 )
+
+for /l %%i in (1,1,40) do (echo INSERT INTO `t_user` VALUES (%%i, 'poplar%%i', 'di%%i', '%%i'^)^; >> sql-test-user.sh)
 ```
