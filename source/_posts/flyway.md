@@ -21,23 +21,24 @@ tags:
 #### 说明：V大写，中间是两个下划线
 
 ````xml
-<!-- 自动初始化数据插件=====集成SpringBoot====================================================================== -->
-            <plugin>
-                <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-maven-plugin</artifactId>
-                <version>6.0.2</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>mysql</groupId>
-                        <artifactId>mysql-connector-java</artifactId>
-                        <version>5.1.47</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <url>jdbc:mysql://localhost:3306/poplar?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false</url>
-                    <driver>com.mysql.jdbc.Driver</driver>
-                    <user>root</user>
-                </configuration>
-            </plugin>
+<plugin>
+    <groupId>org.flywaydb</groupId>
+    <artifactId>flyway-maven-plugin</artifactId>
+    <version>6.1.0</version>
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.47</version>
+        </dependency>
+    </dependencies>
+    <configuration>
+        <url>
+            jdbc:mysql://localhost:3306/poplar?useUnicode=true&amp;characterEncoding=UTF-8&amp;useSSL=false
+        </url>
+        <driver>com.mysql.jdbc.Driver</driver>
+        <user>root</user>
+    </configuration>
+</plugin>
 
 ````

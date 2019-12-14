@@ -37,6 +37,8 @@ tags:
 <generatorConfiguration>
     <!--导入属性配置-->
     <context id="default" targetRuntime="MyBatis3">
+        <!--覆盖生成XML文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin"/>
         <!-- optional，旨在创建class时，对注释进行控制 -->
         <commentGenerator>
             <property name="suppressDate" value="true"/>
@@ -80,11 +82,11 @@ tags:
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <table tableName="t_user" domainObjectName="User"
-               enableCountByExample="true"
-               enableUpdateByExample="true"
-               enableDeleteByExample="true"
-               enableSelectByExample="true"
-               selectByExampleQueryId="true"/>
+               enableCountByExample="false"
+               enableUpdateByExample="false"
+               enableDeleteByExample="false"
+               enableSelectByExample="false"
+               selectByExampleQueryId="false"/>
         <!--<table tableName="t_user" domainObjectName="User"-->
         <!--       enableCountByExample="true"-->
         <!--       enableUpdateByExample="true"-->
@@ -95,5 +97,6 @@ tags:
         <!--    <columnOverride column="sub_images" jdbcType="VARCHAR"/>-->
         <!--</table>-->
     </context>
+</generatorConfiguration>
 </generatorConfiguration>
 ```
