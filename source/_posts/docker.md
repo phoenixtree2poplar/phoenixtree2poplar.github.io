@@ -5,6 +5,7 @@ tags:
     - docker
     - 容器
 ---
+{% asset_img docker.jpg %}
 # docker 基础镜像环境 alpine
 在hub官网会经常能看到 alpine 字样, alpine 是要给非常轻量级的Linux发行版,Docker官方已经推荐使用alpine 代替之前的 Ubuntu作为基础镜像环境, 好处是制作出的最终镜像文件很多, 但docker dub上目前仍以 Ubuntu 为主流的基础镜像环境.
 下面是几个常用发行版基础镜像的大小. 
