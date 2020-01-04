@@ -7,3 +7,4 @@ tags:
 ---
 # only test
 # 仅做测试用
+<img src = "http://pic.poplar.cool/earth-max.jpg">
