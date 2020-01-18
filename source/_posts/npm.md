@@ -12,4 +12,6 @@ nrm ls  #列出所有仓库
 nrm test  #仓库测试(果断淘宝第一)
 nrm use taobao  #使用淘宝仓库
 npm config set registry http://registry.npm.taobao.org  #配置改为淘宝仓库
+npm config set prefix “F:\path\npm-pkg”  #设置本地包下载位置(增加相应环境变量)
+npm config set cache “F:\path\npm-pkg\cache”  #设置缓存位置
 ```
