@@ -53,4 +53,4 @@ password               #登录密码
 privilege level 15     #权限15即特权模式
 username ccna privilege 15 password ciso #用户名 ccna 登录等级 15特权  密码 ciso
 ```
-{% asset_img TCP-IP.jpg %}
+<img src="http://pic.poplar.cool/TCP-IP.jpg">
