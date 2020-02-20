@@ -5,7 +5,7 @@ tags:
     - mybatis-plus
     - mybatis-plus-generator
 ---
-mybatis-plus-generator生成类代码
+mybatis-plus-generator生成类代码，需要修改 pc.setParent("com.poplar") 项目路径
 ```java
 public class CodeGenerator {
     public static void main(String[] args) {
