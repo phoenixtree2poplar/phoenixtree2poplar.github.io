@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <title>mybatis-plus-generator | poplar</title>
+  <meta name="author" content="poplar" />
+
+  
+  <meta name="description" content="mybatis-plus-generator生成类代码123456789101112131415161718192021222324252627282930313233343536373839404142public class CodeGenerator &amp;#123;    public stat" />
+  
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <meta property="og:title" content="mybatis-plus-generator" />
+  <meta property="og:site_name" content="poplar" />
+
+  
+  
+
+  
+    <meta property="og:image" content="undefined" />
+  
+
+  
+  <link href="/css/images/favicon.ico" rel="icon" />
+  
+
+  <link rel="alternate" href="/atom.xml" title="poplar" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+
+
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">poplar</a></h1>
+  <h2><a href="/"></a></h2>
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/">Home</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time datetime="2020-02-20T07:16:52.000Z"><a href="/2020/02/20/mybatis-plus-generator/">2020-02-20</a></time>
+      
+      
+  
+    <h1 class="title">mybatis-plus-generator</h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <p>mybatis-plus-generator生成类代码<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CodeGenerator</span> </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">        <span class="comment">// 代码生成器</span></div><div class="line">        AutoGenerator mpg = <span class="keyword">new</span> AutoGenerator();</div><div class="line"></div><div class="line">        <span class="comment">// 全局配置</span></div><div class="line">        GlobalConfig gc = <span class="keyword">new</span> GlobalConfig();</div><div class="line">        String projectPath = System.getProperty(<span class="string">"user.dir"</span>);</div><div class="line">        gc.setOutputDir(projectPath + <span class="string">"/src/main/java"</span>);</div><div class="line">        gc.setAuthor(<span class="string">"phoenix"</span>);</div><div class="line">        gc.setOpen(<span class="keyword">false</span>);</div><div class="line">        gc.setIdType(IdType.AUTO);</div><div class="line">        gc.setSwagger2(<span class="keyword">true</span>);</div><div class="line">        gc.setFileOverride(<span class="keyword">true</span>);</div><div class="line">        mpg.setGlobalConfig(gc);</div><div class="line"></div><div class="line">        <span class="comment">// 数据源配置</span></div><div class="line">        DataSourceConfig dsc = <span class="keyword">new</span> DataSourceConfig();</div><div class="line">        dsc.setDbType(DbType.MYSQL);</div><div class="line">        dsc.setUrl(<span class="string">"jdbc:mysql://localhost:3306/poplar?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;useSSL=true&amp;serverTimezone=GMT%2B8"</span>);</div><div class="line">        <span class="comment">// dsc.setSchemaName("public");</span></div><div class="line">        dsc.setDriverName(<span class="string">"com.mysql.cj.jdbc.Driver"</span>);</div><div class="line">        dsc.setUsername(<span class="string">"root"</span>);</div><div class="line">        dsc.setPassword(<span class="string">"root"</span>);</div><div class="line">        mpg.setDataSource(dsc);</div><div class="line"></div><div class="line">        <span class="comment">// 包配置</span></div><div class="line">        PackageConfig pc = <span class="keyword">new</span> PackageConfig();</div><div class="line">        pc.setParent(<span class="string">"com.poplar"</span>);</div><div class="line">        mpg.setPackageInfo(pc);</div><div class="line"></div><div class="line">        <span class="comment">// 策略配置</span></div><div class="line">        StrategyConfig strategy = <span class="keyword">new</span> StrategyConfig();</div><div class="line">        strategy.setNaming(NamingStrategy.underline_to_camel);</div><div class="line">        strategy.setColumnNaming(NamingStrategy.underline_to_camel);</div><div class="line">        strategy.setEntityLombokModel(<span class="keyword">true</span>);</div><div class="line">        strategy.setRestControllerStyle(<span class="keyword">true</span>);</div><div class="line">        mpg.setStrategy(strategy);</div><div class="line"></div><div class="line">        mpg.execute();</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Swagger配置类代码<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="meta">@Configuration</span></div><div class="line"><span class="meta">@EnableSwagger</span>2</div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SwaggerConfig</span> </span>&#123;</div><div class="line">    <span class="meta">@Bean</span></div><div class="line">    <span class="function"><span class="keyword">public</span> Docket <span class="title">createRestApi</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Docket(DocumentationType.SWAGGER_2)</div><div class="line">                .apiInfo(apiInfo())</div><div class="line">                .select()</div><div class="line">                .apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))</div><div class="line">                .build();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">private</span> ApiInfo <span class="title">apiInfo</span><span class="params">()</span> </span>&#123;</div><div class="line">        <span class="keyword">return</span> <span class="keyword">new</span> ApiInfoBuilder()</div><div class="line">                .title(<span class="string">"Poplar Service API"</span>)</div><div class="line">                .description(<span class="string">"User用户管理接口"</span>)</div><div class="line">                .version(<span class="string">"V1.0"</span>)</div><div class="line">                .build();</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>代码生成后，需要的依赖pom.xml<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div></pre></td><td class="code"><pre><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">"http://maven.apache.org/POM/4.0.0"</span> <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></div><div class="line">         <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd"</span>&gt;</div><div class="line">    <span class="tag">&lt;<span class="name">modelVersion</span>&gt;</span>4.0.0<span class="tag">&lt;/<span class="name">modelVersion</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">parent</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-parent<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.6.RELEASE<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">parent</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.phoenix<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-generator<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">dependencies</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-generator<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.3.1.tmp<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.velocity<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>velocity-engine-core<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- springboot --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-thymeleaf<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-configuration-processor<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- lombok注解 --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- swagger --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.springfox<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springfox-swagger2<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.9.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.springfox<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springfox-swagger-ui<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.9.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- db驱动 --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>8.0.16<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- db连接池 --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.alibaba<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>druid-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.1.10<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- mybatis-spring --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.mybatis.spring.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-spring-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></div><div class="line">            <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.1.0<span class="tag">&lt;/<span class="name">version</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">dependencies</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/mybatis-plus/">mybatis-plus</a>, <a href="/tags/mybatis-plus-generator/">mybatis-plus-generator</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="hidden" name="q" value="site:phoenixtree2poplar.github.io">
+  </form>
+</div>
+
+  
+
+  
+<div class="widget tag">
+  <h3 class="title">Neueste Artikel</h3>
+  <ul class="entry">
+    
+      <li>
+        <a href="/2020/02/20/mybatis-plus-generator/">mybatis-plus-generator</a>
+      </li>
+    
+      <li>
+        <a href="/2020/01/18/npm/">npm</a>
+      </li>
+    
+      <li>
+        <a href="/2019/12/06/flyway/">flyway</a>
+      </li>
+    
+      <li>
+        <a href="/2019/11/15/Windows/">Windows</a>
+      </li>
+    
+      <li>
+        <a href="/2019/09/03/docker/">docker</a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+<div class="widget tag">
+  <h3 class="title">Tags</h3>
+  <ul class="entry">
+  
+    <li><a href="/tags/GitHub-HEXO/">GitHub+HEXO</a><small>1</small></li>
+  
+    <li><a href="/tags/OneDrive/">OneDrive</a><small>1</small></li>
+  
+    <li><a href="/tags/Remove-OneDrive/">Remove-OneDrive</a><small>1</small></li>
+  
+    <li><a href="/tags/bat/">bat</a><small>1</small></li>
+  
+    <li><a href="/tags/bat脚本/">bat脚本</a><small>1</small></li>
+  
+    <li><a href="/tags/cisco-c3600/">cisco-c3600</a><small>1</small></li>
+  
+    <li><a href="/tags/command/">command</a><small>1</small></li>
+  
+    <li><a href="/tags/docker/">docker</a><small>1</small></li>
+  
+    <li><a href="/tags/flywaty/">flywaty</a><small>1</small></li>
+  
+    <li><a href="/tags/generationConfig-xml/">generationConfig.xml</a><small>1</small></li>
+  
+    <li><a href="/tags/git-hexo/">git-hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/github/">github</a><small>1</small></li>
+  
+    <li><a href="/tags/git初始化/">git初始化</a><small>1</small></li>
+  
+    <li><a href="/tags/hexo/">hexo</a><small>2</small></li>
+  
+    <li><a href="/tags/hexo添加图片/">hexo添加图片</a><small>1</small></li>
+  
+    <li><a href="/tags/idea快捷键/">idea快捷键</a><small>1</small></li>
+  
+    <li><a href="/tags/idea配置/">idea配置</a><small>1</small></li>
+  
+    <li><a href="/tags/java环境变量配置/">java环境变量配置</a><small>1</small></li>
+  
+    <li><a href="/tags/jdk环境变量配置/">jdk环境变量配置</a><small>1</small></li>
+  
+    <li><a href="/tags/linux/">linux</a><small>1</small></li>
+  
+    <li><a href="/tags/love-live/">love live</a><small>1</small></li>
+  
+    <li><a href="/tags/maven/">maven</a><small>1</small></li>
+  
+    <li><a href="/tags/maven设置conf/">maven设置conf</a><small>1</small></li>
+  
+    <li><a href="/tags/mvn/">mvn</a><small>1</small></li>
+  
+    <li><a href="/tags/mybatis/">mybatis</a><small>1</small></li>
+  
+    <li><a href="/tags/mybatis-plus/">mybatis-plus</a><small>1</small></li>
+  
+    <li><a href="/tags/mybatis-plus-generator/">mybatis-plus-generator</a><small>1</small></li>
+  
+    <li><a href="/tags/mysql/">mysql</a><small>1</small></li>
+  
+    <li><a href="/tags/nodejs/">nodejs</a><small>1</small></li>
+  
+    <li><a href="/tags/npm/">npm</a><small>1</small></li>
+  
+    <li><a href="/tags/order/">order</a><small>1</small></li>
+  
+    <li><a href="/tags/print-spooler/">print spooler</a><small>1</small></li>
+  
+    <li><a href="/tags/redis/">redis</a><small>1</small></li>
+  
+    <li><a href="/tags/setting-xml/">setting.xml</a><small>1</small></li>
+  
+    <li><a href="/tags/sql/">sql</a><small>1</small></li>
+  
+    <li><a href="/tags/test/">test</a><small>1</small></li>
+  
+    <li><a href="/tags/tomcat/">tomcat</a><small>1</small></li>
+  
+    <li><a href="/tags/window10-update/">window10 update</a><small>1</small></li>
+  
+    <li><a href="/tags/window10禁止更新/">window10禁止更新</a><small>1</small></li>
+  
+    <li><a href="/tags/windows/">windows</a><small>1</small></li>
+  
+    <li><a href="/tags/双分支管理hexo/">双分支管理hexo</a><small>1</small></li>
+  
+    <li><a href="/tags/命令/">命令</a><small>2</small></li>
+  
+    <li><a href="/tags/容器/">容器</a><small>1</small></li>
+  
+    <li><a href="/tags/思科/">思科</a><small>1</small></li>
+  
+    <li><a href="/tags/打印机服务/">打印机服务</a><small>1</small></li>
+  
+    <li><a href="/tags/数据安装/">数据安装</a><small>1</small></li>
+  
+    <li><a href="/tags/数据库版本维护/">数据库版本维护</a><small>1</small></li>
+  
+    <li><a href="/tags/测试用/">测试用</a><small>1</small></li>
+  
+    <li><a href="/tags/缓存/">缓存</a><small>1</small></li>
+  
+    <li><a href="/tags/路由器/">路由器</a><small>1</small></li>
+  
+  </ul>
+</div>
+
+
+  
+<div class="widget tagcloud">
+  <h3 class="title">Tag-Cloud</h3>
+  <div class="entry">
+    <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/bat/" style="font-size: 10px;">bat</a> <a href="/tags/bat脚本/" style="font-size: 10px;">bat脚本</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/flywaty/" style="font-size: 10px;">flywaty</a> <a href="/tags/generationConfig-xml/" style="font-size: 10px;">generationConfig.xml</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/git初始化/" style="font-size: 10px;">git初始化</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/idea快捷键/" style="font-size: 10px;">idea快捷键</a> <a href="/tags/idea配置/" style="font-size: 10px;">idea配置</a> <a href="/tags/java环境变量配置/" style="font-size: 10px;">java环境变量配置</a> <a href="/tags/jdk环境变量配置/" style="font-size: 10px;">jdk环境变量配置</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/mvn/" style="font-size: 10px;">mvn</a> <a href="/tags/mybatis/" style="font-size: 10px;">mybatis</a> <a href="/tags/mybatis-plus/" style="font-size: 10px;">mybatis-plus</a> <a href="/tags/mybatis-plus-generator/" style="font-size: 10px;">mybatis-plus-generator</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/order/" style="font-size: 10px;">order</a> <a href="/tags/print-spooler/" style="font-size: 10px;">print spooler</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/命令/" style="font-size: 20px;">命令</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/打印机服务/" style="font-size: 10px;">打印机服务</a> <a href="/tags/数据安装/" style="font-size: 10px;">数据安装</a> <a href="/tags/数据库版本维护/" style="font-size: 10px;">数据库版本维护</a> <a href="/tags/测试用/" style="font-size: 10px;">测试用</a> <a href="/tags/缓存/" style="font-size: 10px;">缓存</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
+  </div>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  <p>
+  
+  &copy; 2020 poplar
+  
+  All rights reserved.</p>
+  <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</div>
+<div class="clearfix"></div>
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></footer>
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<div id='bg'></div>
+</body>
+</html>
