@@ -151,3 +151,4 @@ public class SwaggerConfig {
     </dependencies>
 </project>
 ```
+# EasyCode的idea插件也可很快的生成代码
