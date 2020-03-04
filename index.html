@@ -62,6 +62,52 @@
     <header>
       
         <div class="icon"></div>
+        <time datetime="2020-03-04T13:06:27.000Z"><a href="/2020/03/04/shell/">2020-03-04</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2020/03/04/shell/">shell</a></h1>
+  
+
+    </header>
+    <div class="entry">
+      
+        <h1 id="for循环"><a href="#for循环" class="headerlink" title="for循环"></a>for循环</h1><h3 id="for1-sh"><a href="#for1-sh" class="headerlink" title="for1.sh"></a>for1.sh</h3><figure class="highlight shell"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash">!/bin/bash </span></div><div class="line">for ((i=1;i&lt;=5;i++))</div><div class="line">do   </div><div class="line">  echo $i &gt;&gt; test.txt</div><div class="line">done</div></pre></td></tr></table></figure>
+<h3 id="for2-sh"><a href="#for2-sh" class="headerlink" title="for2.sh"></a>for2.sh</h3><figure class="highlight shell"><figcaption><span>script</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span><span class="bash">!/bin/bash</span></div><div class="line">for i in &#123;a..z&#125; &#123;A..Z&#125; &#123;0..9&#125;  # 可任意组合</div><div class="line">do   </div><div class="line">  echo $i &gt;&gt; test.txt</div><div class="line">done</div></pre></td></tr></table></figure>
+<h3 id="for3-sh"><a href="#for3-sh" class="headerlink" title="for3.sh"></a>for3.sh</h3><p>```shell script</p>
+<p>#!/bin/bash<br>for i in <code>ls</code><br>do<br>  echo $i &gt;&gt; test.txt<br>done</p>
+
+      
+    </div>
+    
+    <footer>
+        <div class="alignright">
+          
+          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
+        </div>
+        
+        
+  
+  <div class="tags">
+    <a href="/tags/shell/">shell</a>, <a href="/tags/sh/">sh</a>, <a href="/tags/脚本/">脚本</a>
+  </div>
+
+        <!-- partial('post/share') -->
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+  <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
         <time datetime="2020-02-20T07:16:52.000Z"><a href="/2020/02/20/mybatis-plus-generator/">2020-02-20</a></time>
       
       
@@ -457,57 +503,6 @@
 
 
 
-  <article class="post">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2019-08-09T14:24:12.000Z"><a href="/2019/08/09/command/">2019-08-09</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2019/08/09/command/">command</a></h1>
-  
-
-    </header>
-    <div class="entry">
-      
-        <h2 id="git"><a href="#git" class="headerlink" title="git"></a>git</h2><h4 id="https-github-com-pcottle-learnGitBranching-交互式Git学习"><a href="#https-github-com-pcottle-learnGitBranching-交互式Git学习" class="headerlink" title="https://github.com/pcottle/learnGitBranching  # 交互式Git学习"></a><a href="https://github.com/pcottle/learnGitBranching" target="_blank" rel="external">https://github.com/pcottle/learnGitBranching</a>  # 交互式Git学习</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">git fetch --all   <span class="comment">#强制拉取</span></div><div class="line">git reset --hard origin/master  <span class="comment">#强制覆盖本地</span></div><div class="line">git checkout -b dev  <span class="comment">#从当前分支创建并切换分支到dev</span></div><div class="line">git push --<span class="built_in">set</span>-upstream origin dev  <span class="comment">#当前分支推送远程分支dev</span></div><div class="line">git push origin :dev  <span class="comment">#推送空分支到远程即删除远程分支，需当前不在该分支</span></div><div class="line">git rm -r --cached .  <span class="comment">#刷新文件缓存</span></div><div class="line"><span class="comment">#https://njuferret.github.io/2018/08/24/git-usage/  #git乱码</span></div><div class="line"><span class="comment">#https://github.com/phoenixtree2poplar/my-git/blob/master/git-workflow-tutorial.md  #git工作流</span></div></pre></td></tr></table></figure>
-<h2 id="Maven命令"><a href="#Maven命令" class="headerlink" title="Maven命令"></a>Maven命令</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">mvn archetype:create -DgroupId=packageName -DartifactId=projectName  #创建Maven的普通Java项目</div><div class="line">mvn archetype:generate -DgroupId=packageName -DartifactId=webappName -DarchetypeArtifactId=maven-archetype-webapp  #创建Maven的Web项目</div><div class="line">mvn compile  #编译源代码</div><div class="line">mvn test-compile  #编译测试代码</div><div class="line">mvn test  #运行测试</div><div class="line">mvn package  #打包</div><div class="line">mvn clean  #清除产生的项目</div><div class="line">mvn idea:idea  #生成idea项目</div><div class="line">mvn install  #在本地Repository中安装jar</div><div class="line">mvn -DskipTests clean package  #本地跳过测试打包</div></pre></td></tr></table></figure>
-<h2 id="free"><a href="#free" class="headerlink" title="free"></a>free</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">PURGE RECYCLEBIN  #清除回收BIN，gaussdb数据库命令</div><div class="line">call mvn -f pom.xml dependency:copy-dependencies  #根据pom.xml拉取仓库</div><div class="line"># java远程调试</div><div class="line">java -Xdebug -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=20001 -Dfile.encoding=utf-8 -jar poplar.jar --server.port=20000</div><div class="line">#sed命令修改 free.sh文件的第五行</div><div class="line">sed -i &quot;5c poplar&quot; free.sh</div></pre></td></tr></table></figure>
-<h2 id="Hexo-命令"><a href="#Hexo-命令" class="headerlink" title="Hexo 命令"></a>Hexo 命令</h2><figure class="highlight cmd"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">hexo init [folder]  #Hexo 默认在目前的文件夹建立网站</div><div class="line">hexo n　　＃　　== hexo new "主题"  新建一篇文章，默认使用 _config.yml 中的 default_layout 参数代替</div><div class="line">hexo g  #　　== hexo generate  生产静态html</div><div class="line">hexo s  #　　== hexo server  #本地预览   localhost:<span class="number">4000</span></div><div class="line">hexo d  #　　== hexo deploy  #推送远程发布，即正式发布</div><div class="line">hexo s -g  #本地测试</div><div class="line">hexo d -g  #发布网页</div></pre></td></tr></table></figure>
-<h2 id="tomcat-直接部署应用到根目录"><a href="#tomcat-直接部署应用到根目录" class="headerlink" title="tomcat 直接部署应用到根目录"></a>tomcat 直接部署应用到根目录</h2><h3 id="方法一：（最简单直接的方法）"><a href="#方法一：（最简单直接的方法）" class="headerlink" title="方法一：（最简单直接的方法）"></a>方法一：（最简单直接的方法）</h3><h4 id="删除原-webapps-ROOT-目录下的所有文件，将应用下的所有文件和文件夹复制到ROOT文件夹下。"><a href="#删除原-webapps-ROOT-目录下的所有文件，将应用下的所有文件和文件夹复制到ROOT文件夹下。" class="headerlink" title="删除原 webapps/ROOT 目录下的所有文件，将应用下的所有文件和文件夹复制到ROOT文件夹下。"></a>删除原 webapps/ROOT 目录下的所有文件，将应用下的所有文件和文件夹复制到ROOT文件夹下。</h4><h3 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h3><h4 id="打开Tomcat-conf-server-xml，在之间加入代码："><a href="#打开Tomcat-conf-server-xml，在之间加入代码：" class="headerlink" title="打开Tomcat/conf/server.xml，在之间加入代码："></a>打开Tomcat/conf/server.xml，在<host></host>之间加入代码：</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">Context</span> <span class="attr">path</span>=<span class="string">""</span> <span class="attr">docBase</span>=<span class="string">"D:/path/apache-tomcat-8.5.35/webapps/bbs.war"</span>/&gt;</span></div></pre></td></tr></table></figure>
-<h4 id="这样重新启动tomcat，我们的bbs-war应用就直接部署到ROOT目录了。"><a href="#这样重新启动tomcat，我们的bbs-war应用就直接部署到ROOT目录了。" class="headerlink" title="这样重新启动tomcat，我们的bbs.war应用就直接部署到ROOT目录了。"></a>这样重新启动tomcat，我们的bbs.war应用就直接部署到ROOT目录了。</h4><h3 id="tomcat-增加jvm运行内存"><a href="#tomcat-增加jvm运行内存" class="headerlink" title="tomcat 增加jvm运行内存"></a>tomcat 增加jvm运行内存</h3><h4 id="linux系统修改TOMCAT-HOME-bin-catalina-sh"><a href="#linux系统修改TOMCAT-HOME-bin-catalina-sh" class="headerlink" title="linux系统修改TOMCAT_HOME/bin/catalina.sh"></a>linux系统修改TOMCAT_HOME/bin/catalina.sh</h4><h4 id="win系统修改TOMCAT-HOME-bin-catalina-bat"><a href="#win系统修改TOMCAT-HOME-bin-catalina-bat" class="headerlink" title="win系统修改TOMCAT_HOME/bin/catalina.bat"></a>win系统修改TOMCAT_HOME/bin/catalina.bat</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">JAVA_OPTS=&quot;-server -Xms1024m -Xmx2048m -XX:PermSize=156M -XX:MaxPermSize=512m&quot;</div><div class="line">配置文件前面添加上面一行就行，下面为参数解释</div><div class="line">-server:一定要作为第一个参数，在多个CPU时性能佳 </div><div class="line">-Xms：java Heap初始大小， 默认是物理内存的1/64。</div><div class="line">-Xmx：java heap最大值，建议均设为物理内存的一半。不可超过物理内存。 </div><div class="line">-XX:PermSize:设定内存的永久保存区初始大小，缺省值为64M。</div><div class="line">-XX:MaxPermSize:设定内存的永久保存区最大 大小，缺省值为64M。</div><div class="line">-XX:SurvivorRatio=2  :生还者池的大小,默认是2，如果垃圾回收变成了瓶颈，您可以尝试定制生成池设置</div><div class="line">-XX:NewSize: 新生成的池的初始大小，省值为2M。</div><div class="line">-XX:MaxNewSize: 新生成的池的最大大小，缺省值为32M。</div></pre></td></tr></table></figure>
-<h2 id="Linux服务器硬件信息"><a href="#Linux服务器硬件信息" class="headerlink" title="Linux服务器硬件信息"></a>Linux服务器硬件信息</h2><p>```bash<br>cat /proc/cpuinfo  | grep name | cut -f2 -d: | uniq  #查看cpu名称<br>cat /proc/cpuinfo| grep “physical id”| sort| uniq| wc -l  #查看物理CPU个数<br>cat /proc/cpuinfo| grep “cpu cores”| uniq  #查看每个物理CPU中core的个数(即核数)<br>cat /proc/cpuinfo| grep “processor”| wc -l  #查看逻辑CPU的个<br>free -m  #数查看内存 </p>
-<p>#总核数 = 物理CPU个数 X 每颗物理CPU的核数 </p>
-<p>#总逻辑CPU数 = 物理CPU个数 X 每颗物理CPU的核数 X 超线程数</p>
-
-      
-    </div>
-    
-    <footer>
-        <div class="alignright">
-          
-          <a href='javascript:void(0)' class="share-link bdsharebuttonbox" data-cmd="more">分享</a>
-        </div>
-        
-        
-  
-  <div class="tags">
-    <a href="/tags/命令/">命令</a>, <a href="/tags/hexo/">hexo</a>, <a href="/tags/linux/">linux</a>, <a href="/tags/tomcat/">tomcat</a>, <a href="/tags/maven/">maven</a>, <a href="/tags/mvn/">mvn</a>, <a href="/tags/command/">command</a>, <a href="/tags/order/">order</a>
-  </div>
-
-        <!-- partial('post/share') -->
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
 
 <nav id="pagination">
   
@@ -533,6 +528,10 @@
   <ul class="entry">
     
       <li>
+        <a href="/2020/03/04/shell/">shell</a>
+      </li>
+    
+      <li>
         <a href="/2020/02/20/mybatis-plus-generator/">mybatis-plus-generator</a>
       </li>
     
@@ -546,10 +545,6 @@
     
       <li>
         <a href="/2019/11/15/Windows/">Windows</a>
-      </li>
-    
-      <li>
-        <a href="/2019/09/03/docker/">docker</a>
       </li>
     
   </ul>
@@ -629,6 +624,10 @@
   
     <li><a href="/tags/setting-xml/">setting.xml</a><small>1</small></li>
   
+    <li><a href="/tags/sh/">sh</a><small>1</small></li>
+  
+    <li><a href="/tags/shell/">shell</a><small>1</small></li>
+  
     <li><a href="/tags/sql/">sql</a><small>1</small></li>
   
     <li><a href="/tags/test/">test</a><small>1</small></li>
@@ -659,6 +658,8 @@
   
     <li><a href="/tags/缓存/">缓存</a><small>1</small></li>
   
+    <li><a href="/tags/脚本/">脚本</a><small>1</small></li>
+  
     <li><a href="/tags/路由器/">路由器</a><small>1</small></li>
   
   </ul>
@@ -669,7 +670,7 @@
 <div class="widget tagcloud">
   <h3 class="title">Tag-Cloud</h3>
   <div class="entry">
-    <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/bat/" style="font-size: 10px;">bat</a> <a href="/tags/bat脚本/" style="font-size: 10px;">bat脚本</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/flywaty/" style="font-size: 10px;">flywaty</a> <a href="/tags/generationConfig-xml/" style="font-size: 10px;">generationConfig.xml</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/git初始化/" style="font-size: 10px;">git初始化</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/idea快捷键/" style="font-size: 10px;">idea快捷键</a> <a href="/tags/idea配置/" style="font-size: 10px;">idea配置</a> <a href="/tags/java环境变量配置/" style="font-size: 10px;">java环境变量配置</a> <a href="/tags/jdk环境变量配置/" style="font-size: 10px;">jdk环境变量配置</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/mvn/" style="font-size: 10px;">mvn</a> <a href="/tags/mybatis/" style="font-size: 10px;">mybatis</a> <a href="/tags/mybatis-plus/" style="font-size: 10px;">mybatis-plus</a> <a href="/tags/mybatis-plus-generator/" style="font-size: 10px;">mybatis-plus-generator</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/order/" style="font-size: 10px;">order</a> <a href="/tags/print-spooler/" style="font-size: 10px;">print spooler</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/命令/" style="font-size: 20px;">命令</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/打印机服务/" style="font-size: 10px;">打印机服务</a> <a href="/tags/数据安装/" style="font-size: 10px;">数据安装</a> <a href="/tags/数据库版本维护/" style="font-size: 10px;">数据库版本维护</a> <a href="/tags/测试用/" style="font-size: 10px;">测试用</a> <a href="/tags/缓存/" style="font-size: 10px;">缓存</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
+    <a href="/tags/GitHub-HEXO/" style="font-size: 10px;">GitHub+HEXO</a> <a href="/tags/OneDrive/" style="font-size: 10px;">OneDrive</a> <a href="/tags/Remove-OneDrive/" style="font-size: 10px;">Remove-OneDrive</a> <a href="/tags/bat/" style="font-size: 10px;">bat</a> <a href="/tags/bat脚本/" style="font-size: 10px;">bat脚本</a> <a href="/tags/cisco-c3600/" style="font-size: 10px;">cisco-c3600</a> <a href="/tags/command/" style="font-size: 10px;">command</a> <a href="/tags/docker/" style="font-size: 10px;">docker</a> <a href="/tags/flywaty/" style="font-size: 10px;">flywaty</a> <a href="/tags/generationConfig-xml/" style="font-size: 10px;">generationConfig.xml</a> <a href="/tags/git-hexo/" style="font-size: 10px;">git-hexo</a> <a href="/tags/github/" style="font-size: 10px;">github</a> <a href="/tags/git初始化/" style="font-size: 10px;">git初始化</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/hexo添加图片/" style="font-size: 10px;">hexo添加图片</a> <a href="/tags/idea快捷键/" style="font-size: 10px;">idea快捷键</a> <a href="/tags/idea配置/" style="font-size: 10px;">idea配置</a> <a href="/tags/java环境变量配置/" style="font-size: 10px;">java环境变量配置</a> <a href="/tags/jdk环境变量配置/" style="font-size: 10px;">jdk环境变量配置</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/love-live/" style="font-size: 10px;">love live</a> <a href="/tags/maven/" style="font-size: 10px;">maven</a> <a href="/tags/maven设置conf/" style="font-size: 10px;">maven设置conf</a> <a href="/tags/mvn/" style="font-size: 10px;">mvn</a> <a href="/tags/mybatis/" style="font-size: 10px;">mybatis</a> <a href="/tags/mybatis-plus/" style="font-size: 10px;">mybatis-plus</a> <a href="/tags/mybatis-plus-generator/" style="font-size: 10px;">mybatis-plus-generator</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/npm/" style="font-size: 10px;">npm</a> <a href="/tags/order/" style="font-size: 10px;">order</a> <a href="/tags/print-spooler/" style="font-size: 10px;">print spooler</a> <a href="/tags/redis/" style="font-size: 10px;">redis</a> <a href="/tags/setting-xml/" style="font-size: 10px;">setting.xml</a> <a href="/tags/sh/" style="font-size: 10px;">sh</a> <a href="/tags/shell/" style="font-size: 10px;">shell</a> <a href="/tags/sql/" style="font-size: 10px;">sql</a> <a href="/tags/test/" style="font-size: 10px;">test</a> <a href="/tags/tomcat/" style="font-size: 10px;">tomcat</a> <a href="/tags/window10-update/" style="font-size: 10px;">window10 update</a> <a href="/tags/window10禁止更新/" style="font-size: 10px;">window10禁止更新</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a> <a href="/tags/双分支管理hexo/" style="font-size: 10px;">双分支管理hexo</a> <a href="/tags/命令/" style="font-size: 20px;">命令</a> <a href="/tags/容器/" style="font-size: 10px;">容器</a> <a href="/tags/思科/" style="font-size: 10px;">思科</a> <a href="/tags/打印机服务/" style="font-size: 10px;">打印机服务</a> <a href="/tags/数据安装/" style="font-size: 10px;">数据安装</a> <a href="/tags/数据库版本维护/" style="font-size: 10px;">数据库版本维护</a> <a href="/tags/测试用/" style="font-size: 10px;">测试用</a> <a href="/tags/缓存/" style="font-size: 10px;">缓存</a> <a href="/tags/脚本/" style="font-size: 10px;">脚本</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a>
   </div>
 </div>
 
