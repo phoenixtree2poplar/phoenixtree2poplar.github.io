@@ -14,7 +14,7 @@ tags:
 如果是准备彻底删除onedrive，组策略的这三项其实是不用理会的，因为onedrive都没有了，这个策略设置就毫无意义。这个策略可能适用于同步行为的设置。
 ## 关于删除onedrive的程序卸载
 ### 卸载方法：运行输入 
-```hash
+```cmd
 %localappdata%\Microsoft\OneDrive\  #查看版本号，一般是一串数值的形式。
 %localappdata%\Microsoft\OneDrive\XXXXXXXXXXXXXXX(刚才查看到的那个版本号)\OneDriveSetup /uninstall  #这个命令可以卸载掉大多的onedrive程序，剩余的可以自行删除（可能须要权限设置或者以管理员模式运行cmd）
 ```

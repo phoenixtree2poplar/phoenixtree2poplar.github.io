@@ -8,25 +8,26 @@ tags:
 ---
 # for循环
 ### for1.sh
-```shell script
-#!/bin/bash 
+```sh
+#!/bin/bash
 for ((i=1;i<=5;i++))
-do   
+do
   echo $i >> test.txt
 done
 ```
 ### for2.sh
-```shell script
+```sh
 #!/bin/bash
 for i in {a..z} {A..Z} {0..9}  # 可任意组合
-do   
+do
   echo $i >> test.txt
 done
 ```
 ### for3.sh
-```shell script
-#!/bin/bash 
-for i in `ls`
-do   
+```sh
+#!/bin/bash
+for i in `ls`  # ``为前置执行符
+do
   echo $i >> test.txt
 done
+```

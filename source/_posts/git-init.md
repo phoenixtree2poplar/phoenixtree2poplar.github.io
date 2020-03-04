@@ -5,7 +5,7 @@ tags:
 	- git初始化
 ---
 # gitgub初始化
-```bash
+```sh
 cd /d				#切换到d盘
 mkdir git			#建立git目录
 cd  git				#进入git目录

@@ -18,6 +18,6 @@ tags:
 #### (注意原来Path的变量值末尾有没有;号，如果没有，先输入；号再输入上面的代码)
 #### 3.系统变量→新建 CLASSPATH 变量，变量值填写   .;%JAVA_HOME%\lib;%JAVA_HOME%\lib\tools.jar(注意最前面有一点);
 #### 4.系统变量配置完毕,检验是否配置成功，运行cmd输入：
-```bash
+```cmd
 java -version  //java 和 -version 之间有空格
 ```
