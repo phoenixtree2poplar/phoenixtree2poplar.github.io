@@ -5,6 +5,7 @@ tags:
 	- maven设置conf
 	- setting.xml
 ---
+## maven历史版本[下载](https://archive.apache.org/dist/maven/maven-3/)
 ## 先附上缩减后的源配置文件  setting.xml  在 maven主目录/conf下
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
